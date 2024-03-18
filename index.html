@@ -113,7 +113,7 @@
             </h6>
             <h1 class="text-white">
               Attorneys Fighting For Your
-              <span class="typewriter-text"></span>
+              <span class="typewriter-text"></span><span class="blink">|</span>
             </h1>
             <p class="mb-4 text-light fw-normal">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem
@@ -130,7 +130,7 @@
     </section>
 
     <!-- Section 1 -->
-    <section class="section pt-0">
+    <section class="section no-pt">
       <div class="container">
         <div class="row">
           <div class="col-lg-3 py-5">
@@ -229,21 +229,25 @@
         </div>
       </div>
     </section>
+    <!--Section 1 ends-->
+
     <!--Section 2-->
-    <section class="ftco-section ftco-no-pt ftco-no-pb">
+    <section class="section no-pb no-pt">
       <div class="container">
         <div class="row d-flex">
           <div class="col-md-6 d-flex">
             <div
-              class="img img-video d-flex align-self-stretch align-items-center justify-content-center justify-content-md-end"
-              style="background-image: url(images/about.jpg)"
+              class="img d-flex align-self-stretch align-items-center justify-content-center justify-content-md-end"
+              style="
+                background-image: url('../assets/images/ex-attorney-1.jpg');
+              "
             ></div>
           </div>
           <div class="col-md-6 pl-md-5">
             <div class="row justify-content-start pt-3 pb-3">
-              <div class="col-md-12 heading-section ftco-animate">
+              <div class="col-md-12 heading-section animate">
                 <span class="subheading">Welcome to Repol Law Office</span>
-                <h2 class="mb-4">Paglalaban ka namin hanggang kamatayan</h2>
+                <h2 class="mb-4">Lorem ipsum dolor sit amet.</h2>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Facilis reiciendis quos hic mollitia fugit sint, ut iste
@@ -251,23 +255,54 @@
                   officia nemo. Veritatis, animi illo.
                 </p>
                 <div class="tabulation-2 mt-4">
-                  <ul class="nav nav-pills nav-fill d-md-flex d-block">
-                    <li class="nav-item mb-md-0 mb-2">
-                      <a
+                  <ul
+                    class="nav nav-pills nav-fill d-md-flex d-block"
+                    id="pills-tab"
+                    role="tablist"
+                  >
+                    <li class="nav-item mb-md-0 mb-2" role="presentation">
+                      <button
                         class="nav-link active py-2"
-                        data-toggle="tab"
-                        href="#home1"
-                        >Our Mission</a
+                        id="pills-home-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-home"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-home"
+                        aria-selected="true"
                       >
+                        Our Mission
+                      </button>
                     </li>
-                    <li class="nav-item px-lg-2 mb-md-0 mb-2">
-                      <a class="nav-link py-2" data-toggle="tab" href="#home2"
-                        >Our Vision</a
-                      ><span class="ion-ios-arrow-round-forward"></span>
+                    <li
+                      class="nav-item px-lg-2 mb-md-0 mb-2"
+                      role="presentation"
+                    >
+                      <button
+                        class="nav-link py-2"
+                        id="pills-profile-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-profile"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-profile"
+                        aria-selected="false"
+                      >
+                        Our Vision
+                      </button>
                     </li>
                   </ul>
-                  <div class="tab-content bg-light rounded mt-2">
-                    <div class="tab-pane container p-0 active" id="home1">
+                  <div
+                    class="tab-content bg-light rounded mt-2"
+                    id="pills-tabContent"
+                  >
+                    <div
+                      class="tab-pane container p-0 active"
+                      id="pills-home"
+                      role="tabpanel"
+                      aria-labelledby="pills-home-tab"
+                      tabindex="0"
+                    >
                       <p>
                         Lorem ipsum dolor sit, amet consectetur adipisicing
                         elit. A dolores laudantium sequi eius odio itaque natus
@@ -275,12 +310,18 @@
                         nostrum quia accusantium est, repellendus cum.
                       </p>
                     </div>
-                    <div class="tab-pane container p-0 fade" id="home2">
+                    <div
+                      class="tab-pane container p-0 fade"
+                      id="pills-profile"
+                      role="tabpanel"
+                      aria-labelledby="pills-profile-tab"
+                      tabindex="0"
+                    >
                       <p>
-                        Far far away, behind the word mountains, far from the
-                        countries Vokalia and Consonantia, there live the blind
-                        texts. Separated they live in Bookmarksgrove right at
-                        the coast of the Semantics, a large language ocean.
+                        Vero quae iste unde alias ducimus aliquam tempora
+                        inventore quisquam dolorem deleniti voluptatibus, earum
+                        aut sunt consequatur similique cupiditate qui culpa
+                        assumenda?
                       </p>
                     </div>
                   </div>
@@ -293,7 +334,212 @@
     </section>
     <!--Section 2 ends-->
 
+    <!--Section 3 start-->
+    <section class="section">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-10 text-center heading-section">
+            <span class="subheading">Explore Case Studies</span>
+            <h2 class="mb-4">1000+ Completed Cases Successfully</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="carousel-case owl-carousel owl">
+              <div class="item">
+                <div
+                  class="case img d-flex align-items-center justify-content-center"
+                  style="background-image: url()"
+                >
+                  <div class="text text-center">
+                    <h3><a href="#">Legal Seperation</a></h3>
+                    <span>Corporate</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div
+                  class="case img d-flex align-items-center justify-content-center"
+                  style="background-image: url()"
+                >
+                  <div class="text text-center">
+                    <h3><a href="#">Legal Seperation</a></h3>
+                    <span>Corporate</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div
+                  class="case img d-flex align-items-center justify-content-center"
+                  style="background-image: url()"
+                >
+                  <div class="text text-center">
+                    <h3><a href="#">Legal Seperation</a></h3>
+                    <span>Corporate</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div
+                  class="case img d-flex align-items-center justify-content-center"
+                  style="background-image: url()"
+                >
+                  <div class="text text-center">
+                    <h3><a href="#">Legal Seperation</a></h3>
+                    <span>Corporate</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 text-center mt-4">
+            <a href="case.html" class="btn btn-primary px-5"
+              >See All Successful Cases</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section 3 ends-->
+
+    <!--Section4-->
+    <!-- <section class="section no-pt">
+      <div class="container-fluid px-md-5">
+        <div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 text-center heading-section animate">
+            <span class="subheading">Our Attorney</span>
+            <h2 class="mb-4">Our Legal Attorneys</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <div class="block-2 animate">
+              <div class="flipper">
+                <div class="front" style="background-image: url()">
+                  <div class="box">
+                    <h2>Ryan Anderson</h2>
+                    <p>Civil Lawyer</p>
+                  </div>
+                </div>
+                <div class="back"> -->
+    <!-- back content -->
+    <!-- <blockquote>
+                    <p>
+                      &ldquo;Even the all-powerful Pointing has no control about
+                      the blind texts it is an almost unorthographic life One
+                      day however a small line of blind text &rdquo;
+                    </p>
+                  </blockquote>
+                  <div class="author d-flex">
+                    <div class="image align-self-center">
+                      <img src="" alt="" />
+                    </div>
+                    <div class="name align-self-center ml-3">
+                      Ryan Anderson <span class="position">Civil Lawyer</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="block-2 animate">
+              <div class="flipper">
+                <div class="front" style="background-image: url()">
+                  <div class="box">
+                    <h2>Greg Washer</h2>
+                    <p>Business Lawyer</p>
+                  </div>
+                </div>
+                <div class="back"> -->
+    <!-- back content -->
+    <!-- <blockquote>
+                    <p>
+                      &ldquo;Even the all-powerful Pointing has no control about
+                      the blind texts it is an almost unorthographic life One
+                      day however a small line of blind text &rdquo;
+                    </p>
+                  </blockquote>
+                  <div class="author d-flex">
+                    <div class="image align-self-center">
+                      <img src="" alt="" />
+                    </div>
+                    <div class="name align-self-center ml-3">
+                      Greg Washer<span class="position">Business Lawyer</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="block-2 animate">
+              <div class="flipper">
+                <div class="front" style="background-image: url()">
+                  <div class="box">
+                    <h2>Tony Henderson</h2>
+                    <p>Criminal Defense</p>
+                  </div>
+                </div>
+                <div class="back"> -->
+    <!-- back content -->
+    <!-- <blockquote>
+                    <p>
+                      &ldquo;Even the all-powerful Pointing has no control about
+                      the blind texts it is an almost unorthographic life One
+                      day however a small line of blind text &rdquo;
+                    </p>
+                  </blockquote>
+                  <div class="author d-flex">
+                    <div class="image align-self-center">
+                      <img src="" alt="" />
+                    </div>
+                    <div class="name align-self-center ml-3">
+                      Tony Henderson
+                      <span class="position">Criminal Defense</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="block-2 animate">
+              <div class="flipper">
+                <div class="front" style="background-image: url()">
+                  <div class="box">
+                    <h2>Jack Smith</h2>
+                    <p>Insurance Lawyer</p>
+                  </div>
+                </div>
+                <div class="back"> -->
+    <!-- back content -->
+    <!-- <blockquote>
+                    <p>
+                      &ldquo;Even the all-powerful Pointing has no control about
+                      the blind texts it is an almost unorthographic life One
+                      day however a small line of blind text &rdquo;
+                    </p>
+                  </blockquote>
+                  <div class="author d-flex">
+                    <div class="image align-self-center">
+                      <img src="" alt="" />
+                    </div>
+                    <div class="name align-self-center ml-3">
+                      Jack Smith <span class="position">Insurance Lawyer</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!--Section4 ends-->
+
     <!-- Font Awesome -->
+
     <script
       src="https://kit.fontawesome.com/fdf300571b.js"
       crossorigin="anonymous"

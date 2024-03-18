@@ -70,10 +70,29 @@ img {
   padding-bottom: 140px;
 }
 
+.no-pt {
+  padding-top: 0 !important;
+}
+
+.no-pb {
+  padding-bottom: 0 !important;
+}
+
 /* Navbar */
 .navbar {
-  /* box-shadow: var(--box-shadow); */
 }
+
+@media (max-width: 991.98px) {
+  .navbar {
+    background: #000000 !important;
+    top: 0;
+  }
+}
+
+.navbar-scrolled {
+  background-color: var(--dark);
+}
+
 .navbar-nav .nav-link {
   font-weight: 500;
   color: var(--white);
@@ -84,7 +103,8 @@ img {
   color: var(--primary);
 }
 
-.navbar .navbar-toggler {
+.navbar-nav > .nav-item > .nav-link:hover {
+  color: var(--light-green);
 }
 
 /* Container */
@@ -95,6 +115,7 @@ img {
   margin-right: auto;
   margin-left: auto;
 }
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -162,10 +183,6 @@ img {
   width: 45%;
 }
 
-#hero span {
-  color: var(--primary);
-}
-
 @media screen and (max-width: 600px) {
   #hero h1 {
     font-size: 36px;
@@ -176,10 +193,32 @@ img {
     width: 100%;
   }
 }
+.typewriter-text {
+  color: var(--primary);
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+}
+.blink {
+  color: var(--primary);
+  animation: blink-animation 1s infinite; /* Change blink speed here */
+}
+@keyframes blink-animation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 
 /* SECTION */
 .section {
-  padding: 7em 0;
+  padding: 8em 0;
   position: relative;
 }
 
@@ -293,3 +332,59 @@ img {
   bottom: -25px;
   color: #fff;
 }
+
+/* sec 2 */
+
+.img {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.heading-section .subheading {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 700;
+  color: var(--light-green);
+}
+
+.heading-section h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+@media (max-width: 767.98px) {
+  .heading-section h2 {
+    font-size: 28px;
+  }
+}
+
+.tab-content > .tab-pane {
+  display: none;
+}
+
+.tab-content > .active {
+  display: block;
+}
+
+.tabulation-2 .nav-pills .nav-item .nav-link {
+  background: #fff;
+  border-radius: 4px;
+  color: #000000;
+  font-weight: 600;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.tabulation-2 .nav-pills .nav-item .nav-link.active {
+  color: #fff;
+  background: var(--light-green);
+  border: 1px solid var(--light-green);
+}
+
+.tabulation-2 .tab-content {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
