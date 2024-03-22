@@ -48,4 +48,13 @@ function eraseText(text, i, speed) {
 // Start typing effect with the first word
 typeWriter(wordsToType[currentWordIndex], 0, 300); // Adjust initial typing speed here
 
-// Mission & Vision //
+// Hover image in section 2 //
+function changeImage() {
+  document.querySelector(".img").style.backgroundImage =
+    "url('../assets/images/ex-about-2.jpg')";
+}
+
+function restoreImage() {
+  document.querySelector(".img").style.backgroundImage =
+    "url('../assets/images/ex-about-1.jpg')";
+}

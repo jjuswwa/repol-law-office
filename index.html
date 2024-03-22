@@ -17,10 +17,20 @@
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="../assets/css/main.css" />
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="../assets/css/owl.carousel.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+      integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top p-md-3">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top p-md-1">
       <div class="container">
         <a class="navbar-brand" href="#"
           ><img
@@ -65,13 +75,7 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="blog.html">Blog</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item dropdown mx-2">
                 <a
@@ -84,12 +88,26 @@
                   Pages
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Attorney</a></li>
-                  <li><a class="dropdown-item" href="#">Practice Areas</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">Case Studies</a>
+                    <a class="dropdown-item" href="#case-studies"
+                      >Case Studies</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#attorney">Attorney</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#practice-area"
+                      >Practice Areas</a
+                    >
                   </li>
                 </ul>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#blog">Blog</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
             <a href="free-consultation.html" class="btn btn-brand mx-2"
@@ -134,7 +152,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-3 py-5">
-            <div class="heading-section animate">
+            <div class="heading-section">
               <span class="subheading">Services</span>
               <h2 class="mb-4">Why Select Us?</h2>
               <p>
@@ -173,7 +191,7 @@
                   <a
                     href="#"
                     class="btn-custom d-flex align-items-center justify-content-center"
-                    ><span class="ion-ios-arrow-round-forward"></span> Read more
+                    ><span></span> Read more
                   </a>
                 </div>
               </div>
@@ -196,8 +214,7 @@
                   <a
                     href="#"
                     class="btn-custom d-flex align-items-center justify-content-center"
-                    ><span class="ion-ios-arrow-round-forward"></span> Read
-                    more</a
+                    ><span></span> Read more</a
                   >
                 </div>
               </div>
@@ -220,7 +237,7 @@
                   <a
                     href="#"
                     class="btn-custom d-flex align-items-center justify-content-center"
-                    ><span class="ion-ios-arrow-round-forward"></span> Read more
+                    ><span></span> Read more
                   </a>
                 </div>
               </div>
@@ -232,20 +249,20 @@
     <!--Section 1 ends-->
 
     <!--Section 2-->
-    <section class="section no-pb no-pt">
+    <section class="section no-pb no-pt" id="about">
       <div class="container">
         <div class="row d-flex">
           <div class="col-md-6 d-flex">
             <div
-              class="img d-flex align-self-stretch align-items-center justify-content-center justify-content-md-end"
-              style="
-                background-image: url('../assets/images/ex-attorney-1.jpg');
-              "
+              class="img img-hover d-flex align-self-stretch align-items-center justify-content-center justify-content-md-end"
+              style="background-image: url('../assets/images/ex-about-1.jpg')"
+              onmouseover="changeImage()"
+              onmouseout="restoreImage()"
             ></div>
           </div>
           <div class="col-md-6 pl-md-5">
             <div class="row justify-content-start pt-3 pb-3">
-              <div class="col-md-12 heading-section animate">
+              <div class="col-md-12 heading-section">
                 <span class="subheading">Welcome to Repol Law Office</span>
                 <h2 class="mb-4">Lorem ipsum dolor sit amet.</h2>
                 <p>
@@ -325,6 +342,7 @@
                       </p>
                     </div>
                   </div>
+                  <div class="d-flex mt-4 mt-md-5"></div>
                 </div>
               </div>
             </div>
@@ -340,102 +358,126 @@
         <div class="row justify-content-center mb-5">
           <div class="col-md-10 text-center heading-section">
             <span class="subheading">Explore Case Studies</span>
-            <h2 class="mb-4">1000+ Completed Cases Successfully</h2>
+            <h2 class="mb-4">(N)Completed Cases Successfully</h2>
           </div>
         </div>
         <div class="row">
           <div class="col-md-12">
-            <div class="carousel-case owl-carousel owl">
+            <div class="owl-carousel own-theme">
               <div class="item">
                 <div
                   class="case img d-flex align-items-center justify-content-center"
-                  style="background-image: url()"
+                  style="
+                    background-image: url('../assets/images/ex-successful-1.jpg');
+                  "
                 >
                   <div class="text text-center">
-                    <h3><a href="#">Legal Seperation</a></h3>
-                    <span>Corporate</span>
+                    <h3>
+                      <a href="#">Lorem ipsum </a>
+                    </h3>
+                    <span>lorem</span>
                   </div>
                 </div>
               </div>
               <div class="item">
                 <div
                   class="case img d-flex align-items-center justify-content-center"
-                  style="background-image: url()"
+                  style="
+                    background-image: url('../assets/images/ex-successful-2.jpg');
+                  "
                 >
                   <div class="text text-center">
-                    <h3><a href="#">Legal Seperation</a></h3>
-                    <span>Corporate</span>
+                    <h3>
+                      <a href="#">Lorem ipsum </a>
+                    </h3>
+                    <span>lorem</span>
                   </div>
                 </div>
               </div>
               <div class="item">
                 <div
                   class="case img d-flex align-items-center justify-content-center"
-                  style="background-image: url()"
+                  style="
+                    background-image: url('../assets/images/ex-successful-3.jpg');
+                  "
                 >
                   <div class="text text-center">
-                    <h3><a href="#">Legal Seperation</a></h3>
-                    <span>Corporate</span>
+                    <h3>
+                      <a href="#">Lorem ipsum </a>
+                    </h3>
+                    <span>lorem</span>
                   </div>
                 </div>
               </div>
               <div class="item">
                 <div
                   class="case img d-flex align-items-center justify-content-center"
-                  style="background-image: url()"
+                  style="
+                    background-image: url('../assets/images/ex-successful-4.jpg');
+                  "
                 >
                   <div class="text text-center">
-                    <h3><a href="#">Legal Seperation</a></h3>
-                    <span>Corporate</span>
+                    <h3>
+                      <a href="#">Lorem ipsum </a>
+                    </h3>
+                    <span>lorem</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-md-12 text-center mt-4">
-            <a href="case.html" class="btn btn-primary px-5"
+            <a href="case.html" class="btn btn-brand px-5"
               >See All Successful Cases</a
             >
           </div>
         </div>
       </div>
     </section>
+
     <!-- Section 3 ends-->
 
-    <!--Section4-->
-    <!-- <section class="section no-pt">
+    <!--Section 4-->
+    <section class="section no-pt">
       <div class="container-fluid px-md-5">
         <div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 text-center heading-section animate">
+          <div class="col-md-7 text-center heading-section">
             <span class="subheading">Our Attorney</span>
             <h2 class="mb-4">Our Legal Attorneys</h2>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-3 col-sm-6">
-            <div class="block-2 animate">
+            <div class="block-2">
               <div class="flipper">
-                <div class="front" style="background-image: url()">
+                <div
+                  class="front"
+                  style="
+                    background-image: url('../assets/images/ex-attorney-1.jpg');
+                  "
+                >
                   <div class="box">
-                    <h2>Ryan Anderson</h2>
-                    <p>Civil Lawyer</p>
+                    <h2>Attornet 1</h2>
+                    <p>Lawyer</p>
                   </div>
                 </div>
-                <div class="back"> -->
-    <!-- back content -->
-    <!-- <blockquote>
+                <div class="back">
+                  <!-- back content -->
+                  <blockquote>
                     <p>
-                      &ldquo;Even the all-powerful Pointing has no control about
-                      the blind texts it is an almost unorthographic life One
-                      day however a small line of blind text &rdquo;
+                      &ldquo;Lorem ipsum dolor sit amet consectetur adipisicing
+                      elit. Sit velit maiores possimus eligendi quas pariatur
+                      minus consequatur suscipit asperiores quo placeat, laborum
+                      facere similique adipisci? Dicta aliquid optio nostrum
+                      earum. &rdquo;
                     </p>
                   </blockquote>
                   <div class="author d-flex">
                     <div class="image align-self-center">
-                      <img src="" alt="" />
+                      <img src="../assets/images/ex-attorney-1.jpg" alt="" />
                     </div>
                     <div class="name align-self-center ml-3">
-                      Ryan Anderson <span class="position">Civil Lawyer</span>
+                      Attornry 1 <span class="position"> Lawyer</span>
                     </div>
                   </div>
                 </div>
@@ -443,29 +485,36 @@
             </div>
           </div>
           <div class="col-lg-3 col-sm-6">
-            <div class="block-2 animate">
+            <div class="block-2">
               <div class="flipper">
-                <div class="front" style="background-image: url()">
+                <div
+                  class="front"
+                  style="
+                    background-image: url('../assets/images/ex-attorney-2.jpg');
+                  "
+                >
                   <div class="box">
-                    <h2>Greg Washer</h2>
-                    <p>Business Lawyer</p>
+                    <h2>Attornry 2</h2>
+                    <p>Lawyer</p>
                   </div>
                 </div>
-                <div class="back"> -->
-    <!-- back content -->
-    <!-- <blockquote>
+                <div class="back">
+                  <!-- back content -->
+                  <blockquote>
                     <p>
-                      &ldquo;Even the all-powerful Pointing has no control about
-                      the blind texts it is an almost unorthographic life One
-                      day however a small line of blind text &rdquo;
+                      &ldquo;Lorem ipsum dolor sit amet consectetur adipisicing
+                      elit. Sit velit maiores possimus eligendi quas pariatur
+                      minus consequatur suscipit asperiores quo placeat, laborum
+                      facere similique adipisci? Dicta aliquid optio nostrum
+                      earum.&rdquo;
                     </p>
                   </blockquote>
                   <div class="author d-flex">
                     <div class="image align-self-center">
-                      <img src="" alt="" />
+                      <img src="../assets/images/ex-attorney-2.jpg" alt="" />
                     </div>
                     <div class="name align-self-center ml-3">
-                      Greg Washer<span class="position">Business Lawyer</span>
+                      Attornry 2<span class="position"> Lawyer</span>
                     </div>
                   </div>
                 </div>
@@ -473,30 +522,37 @@
             </div>
           </div>
           <div class="col-lg-3 col-sm-6">
-            <div class="block-2 animate">
+            <div class="block-2">
               <div class="flipper">
-                <div class="front" style="background-image: url()">
+                <div
+                  class="front"
+                  style="
+                    background-image: url('../assets/images/ex-attorney-3.jpg');
+                  "
+                >
                   <div class="box">
-                    <h2>Tony Henderson</h2>
-                    <p>Criminal Defense</p>
+                    <h2>Attornry 3</h2>
+                    <p>Lawyer</p>
                   </div>
                 </div>
-                <div class="back"> -->
-    <!-- back content -->
-    <!-- <blockquote>
+                <div class="back">
+                  <!-- back content -->
+                  <blockquote>
                     <p>
-                      &ldquo;Even the all-powerful Pointing has no control about
-                      the blind texts it is an almost unorthographic life One
-                      day however a small line of blind text &rdquo;
+                      &ldquo;Lorem ipsum dolor sit amet consectetur adipisicing
+                      elit. Sit velit maiores possimus eligendi quas pariatur
+                      minus consequatur suscipit asperiores quo placeat, laborum
+                      facere similique adipisci? Dicta aliquid optio nostrum
+                      earum. &rdquo;
                     </p>
                   </blockquote>
                   <div class="author d-flex">
                     <div class="image align-self-center">
-                      <img src="" alt="" />
+                      <img src="../assets/images/ex-attorney-3.jpg" alt="" />
                     </div>
                     <div class="name align-self-center ml-3">
-                      Tony Henderson
-                      <span class="position">Criminal Defense</span>
+                      Attornry 3
+                      <span class="position">Lawyer</span>
                     </div>
                   </div>
                 </div>
@@ -504,29 +560,36 @@
             </div>
           </div>
           <div class="col-lg-3 col-sm-6">
-            <div class="block-2 animate">
+            <div class="block-2">
               <div class="flipper">
-                <div class="front" style="background-image: url()">
+                <div
+                  class="front"
+                  style="
+                    background-image: url('../assets/images/ex-attorney-4.jpg');
+                  "
+                >
                   <div class="box">
-                    <h2>Jack Smith</h2>
-                    <p>Insurance Lawyer</p>
+                    <h2>Attornry 4</h2>
+                    <p>Lawyer</p>
                   </div>
                 </div>
-                <div class="back"> -->
-    <!-- back content -->
-    <!-- <blockquote>
+                <div class="back">
+                  <!-- back content -->
+                  <blockquote>
                     <p>
-                      &ldquo;Even the all-powerful Pointing has no control about
-                      the blind texts it is an almost unorthographic life One
-                      day however a small line of blind text &rdquo;
+                      &ldquo;Lorem ipsum dolor sit amet consectetur adipisicing
+                      elit. Sit velit maiores possimus eligendi quas pariatur
+                      minus consequatur suscipit asperiores quo placeat, laborum
+                      facere similique adipisci? Dicta aliquid optio nostrum
+                      earum. &rdquo;
                     </p>
                   </blockquote>
                   <div class="author d-flex">
                     <div class="image align-self-center">
-                      <img src="" alt="" />
+                      <img src="../assets/images/ex-attorney-4.jpg" alt="" />
                     </div>
                     <div class="name align-self-center ml-3">
-                      Jack Smith <span class="position">Insurance Lawyer</span>
+                      Attornry 4 <span class="position"> Lawyer</span>
                     </div>
                   </div>
                 </div>
@@ -535,18 +598,181 @@
           </div>
         </div>
       </div>
-    </section> -->
-    <!--Section4 ends-->
+    </section>
+    <!--Section 4 ends-->
+
+    <!-- Section 5-->
+    <section class="section no-pt no-pb">
+      <div class="container-fluid px-md-5">
+        <div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 text-center heading-section">
+            <span class="subheading">Practice Area</span>
+            <h2 class="mb-4">Lorem</h2>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-3 text-center">
+            <div class="practice-area">
+              <div
+                class="icon d-flex justify-content-center align-items-center"
+              >
+                <i class="fas fa-solid fa-gavel"></i>
+              </div>
+              <h3><a href="practice-single.html">Lorem Law</a></h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
+                excepturi fuga.
+              </p>
+              <a
+                href="#"
+                class="btn-custom d-flex align-items-center justify-content-center"
+                ><span></span>Read More</a
+              >
+            </div>
+          </div>
+          <div class="col-md-3 text-center">
+            <div class="practice-area">
+              <div
+                class="icon d-flex justify-content-center align-items-center"
+              >
+                <i class="fas fa-solid fa-gavel"></i>
+              </div>
+              <h3><a href="practice-single.html">Lorem Law</a></h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
+                excepturi fuga.
+              </p>
+              <a
+                href="#"
+                class="btn-custom d-flex align-items-center justify-content-center"
+                ><span></span>Read More</a
+              >
+            </div>
+          </div>
+          <div class="col-md-3 text-center">
+            <div class="practice-area">
+              <div
+                class="icon d-flex justify-content-center align-items-center"
+              >
+                <i class="fas fa-solid fa-gavel"></i>
+              </div>
+              <h3><a href="practice-single.html">Lorem Law</a></h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
+                excepturi fuga.
+              </p>
+              <a
+                href="#"
+                class="btn-custom d-flex align-items-center justify-content-center"
+                ><span></span>Read More</a
+              >
+            </div>
+          </div>
+          <div class="col-md-3 text-center">
+            <div class="practice-area">
+              <div
+                class="icon d-flex justify-content-center align-items-center"
+              >
+                <i class="fas fa-solid fa-gavel"></i>
+              </div>
+              <h3><a href="practice-single.html">Lorem Law</a></h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
+                excepturi fuga.
+              </p>
+              <a
+                href="#"
+                class="btn-custom d-flex align-items-center justify-content-center"
+                ><span></span>Read More</a
+              >
+            </div>
+          </div>
+          <div class="col-md-3 text-center">
+            <div class="practice-area">
+              <div
+                class="icon d-flex justify-content-center align-items-center"
+              >
+                <i class="fas fa-solid fa-gavel"></i>
+              </div>
+              <h3><a href="practice-single.html">Lorem Law</a></h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
+                excepturi fuga.
+              </p>
+              <a
+                href="#"
+                class="btn-custom d-flex align-items-center justify-content-center"
+                ><span></span>Read More</a
+              >
+            </div>
+          </div>
+          <div class="col-md-3 text-center">
+            <div class="practice-area">
+              <div
+                class="icon d-flex justify-content-center align-items-center"
+              >
+                <i class="fas fa-solid fa-gavel"></i>
+              </div>
+              <h3><a href="practice-single.html">Lorem Law</a></h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
+                excepturi fuga.
+              </p>
+              <a
+                href="#"
+                class="btn-custom d-flex align-items-center justify-content-center"
+                ><span></span>Read More</a
+              >
+            </div>
+          </div>
+          <div class="col-md-3 text-center">
+            <div class="practice-area">
+              <div
+                class="icon d-flex justify-content-center align-items-center"
+              >
+                <i class="fas fa-solid fa-gavel"></i>
+              </div>
+              <h3><a href="practice-single.html">Lorem Law</a></h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
+                excepturi fuga.
+              </p>
+              <a
+                href="#"
+                class="btn-custom d-flex align-items-center justify-content-center"
+                ><span></span>Read More</a
+              >
+            </div>
+          </div>
+          <div class="col-md-3 text-center">
+            <div class="practice-area">
+              <div
+                class="icon d-flex justify-content-center align-items-center"
+              >
+                <i class="fas fa-solid fa-gavel"></i>
+              </div>
+              <h3><a href="practice-single.html">Lorem Law</a></h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
+                excepturi fuga.
+              </p>
+              <a
+                href="#"
+                class="btn-custom d-flex align-items-center justify-content-center"
+                ><span></span>Read More</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section 5 ends-->
 
     <!-- Font Awesome -->
-
     <script
       src="https://kit.fontawesome.com/fdf300571b.js"
       crossorigin="anonymous"
     ></script>
-
-    <!-- JavaScript -->
-    <script src="../assets/js/script.js"></script>
 
     <!-- Bootstrap, JQuery Popper Js-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"></script>
@@ -560,5 +786,35 @@
       integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
       crossorigin="anonymous"
     ></script>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/script.js"></script>
+
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+      // Owl Carousel//
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 10,
+          nav: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 3,
+            },
+            1000: {
+              items: 3,
+            },
+          },
+        });
+      });
+    </script>
   </body>
 </html>
