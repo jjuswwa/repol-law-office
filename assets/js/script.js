@@ -9,6 +9,24 @@ window.addEventListener("scroll", () => {
   }
 });
 
+// document.addEventListener("DOMContentLoaded", function () {
+//   const navLinks = document.querySelectorAll(".nav-link");
+
+//   navLinks.forEach(function (navLink) {
+//     navLink.addEventListener("click", function () {
+//       // Remove active class from all links
+//       navLinks.forEach(function (link) {
+//         link.classList.remove("active");
+//         link.style.color = "var(--white)"; // Reset color to default for all links
+//       });
+
+//       // Add active class to the clicked link and change color
+//       this.classList.add("active");
+//       this.style.color = "var(--primary)"; // Change color for the clicked link
+//     });
+//   });
+// });
+
 // Array of words to be typed
 const wordsToType = ["Freedom.", "Rights.", "Case.", "Custody."];
 let currentWordIndex = 0;
@@ -58,3 +76,19 @@ function restoreImage() {
   document.querySelector(".img").style.backgroundImage =
     "url('../assets/images/ex-about-1.jpg')";
 }
+
+//Year
+// Get the span element containing the years
+const yearsSpan = document.getElementById("years-experienced");
+
+// Get the start year from the data attribute
+const startYear = parseInt(yearsSpan.dataset.startYear);
+
+// Calculate the current year
+const currentYear = new Date().getFullYear();
+
+// Calculate the number of years of experience
+const yearsOfExperience = currentYear - startYear;
+
+// Update the text content of the span element
+yearsSpan.textContent = yearsOfExperience;

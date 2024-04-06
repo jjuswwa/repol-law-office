@@ -38,15 +38,16 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top p-md-1">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#"
-          ><img
+        <a class="navbar-brand" href="#">
+          <img
             src="../assets/images/repol-law-office-logo.png"
             alt="Repol Law Office Logo"
             loading="lazy"
             width="250"
-        /></a>
+          />
+        </a>
         <button
           class="navbar-toggler shadow-none border-0"
           type="button"
@@ -78,59 +79,75 @@
             ></button>
           </div>
           <div class="offcanvas-body">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="font-size: 18px">
               <li class="nav-item mx-2">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item mx-2">
                 <a class="nav-link" href="#about">About</a>
               </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#blog">Blog</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
               <li class="nav-item dropdown mx-2">
                 <a
                   class="nav-link dropdown-toggle"
-                  href="#"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
+                  >Pages</a
                 >
-                  Pages
-                </a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="#case-studies"
-                      >Case Studies</a
+                    <a class="dropdown-item" href="#mission-vision"
+                      >Our Mission & Vision</a
                     >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#attorney">Attorney</a>
                   </li>
                   <li>
                     <a class="dropdown-item" href="#practice-area"
                       >Practice Areas</a
                     >
                   </li>
+                  <li>
+                    <a class="dropdown-item" href="#land-surveying"
+                      >Land Surveying</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="#team">Our Team</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#client">Our Client</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#testimonial">Testimonial</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="case-study.html"
+                      >Case Studies</a
+                    >
+                  </li>
                 </ul>
               </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="#blog">Blog</a>
-              </li>
-
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
             </ul>
-            <a href="free-consultation.html" class="btn btn-brand mx-2"
-              >Free Consultation</a
+            <a
+              href="free-consultation.html"
+              class="btn btn-brand mx-2"
+              style="width: 145px"
+              >Inquire Now</a
             >
           </div>
         </div>
       </div>
     </nav>
+    <!-- Navbar End -->
 
     <!-- Hero Section -->
     <section
       id="hero"
-      class="w-100 vh-100 d-flex justify-content-center align-items-center"
+      class="hero-wrap w-100 vh-100 d-flex justify-content-center align-items-center"
     >
       <div class="container">
         <div class="row">
@@ -149,21 +166,121 @@
             <a
               href="free-consultation.html"
               class="btn btn-brand me-2 p-2 fw-normal"
-              >Get Legal Advice</a
+              style="width: 145px"
+              >Inquire Now</a
             >
           </div>
         </div>
       </div>
     </section>
+    <!-- Hero Section End -->
 
-    <!-- Section 1 -->
-    <section class="section no-pt">
+    <!-- About Section -->
+    <section class="section py-5" id="about">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="container-img">
+              <img
+                src="../assets/images/ex-about-1.jpg"
+                alt=""
+                class="img-fluid"
+              />
+              <img
+                src="../assets/images/ex-about-2.jpg"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-lg-6 py-md-5">
+            <div class="col-md-12 heading-section">
+              <span class="subheading">Welcome to Repol Law Office</span>
+              <h2 class="display-5 mb-4">Lorem ipsum dolor sit amet.</h2>
+              <p class="lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+                reiciendis quos hic.
+              </p>
+              <p class="lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+                reiciendis quos hic mollitia fugit sint, ut iste quaerat, dolore
+                pariatur quod quia incidunt, numquam culpa officia nemo.
+                Veritatis, animi illo.
+              </p>
+              <p class="lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+                reiciendis quos hic mollitia fugit sint, ut iste quaerat, dolore
+                pariatur quod quia incidunt, numquam culpa officia nemo.
+                Veritatis, animi illo.
+              </p>
+              <!-- HIDE MUNA IF EVER STARTING PALANG -->
+              <div class="years col-md-6 d-flex mt-4 mt-md-5">
+                <h4>
+                  <span
+                    class="number"
+                    id="years-experienced"
+                    data-start-year="2024"
+                    >0</span
+                  >
+                  <span>Years of Experience</span>
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--About Section End-->
+
+    <!-- Mision & Vision Section -->
+    <section class="section" id="mission-vision">
+      <div class="container text-center">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="box">
+              <div class="mission-icon" id="mission-icon">
+                <img src="../assets/images/mission.png" alt="Mission Icon" />
+
+                <div class="mission-text">
+                  <h2>Mission</h2>
+                  <p>
+                    To empower individuals worldwide with knowledge and tools
+                    for personal and professional growth, fostering a global
+                    community of lifelong learners.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="box">
+              <div class="vision-icon" id="vision-icon">
+                <img src="../assets/images/vision.png" alt="Vision Icon" />
+
+                <div class="vision-text">
+                  <h2>Vision</h2>
+                  <p>
+                    A world where everyone has access to education and resources
+                    to fulfill their potential, driving innovation, equality,
+                    and prosperity for all.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  Mision & Vision Section End -->
+
+    <!--Practice Area Section -->
+    <section class="section no-pt bg-light" id="practice-area">
       <div class="container">
         <div class="row">
           <div class="col-lg-3 py-5">
             <div class="heading-section">
               <span class="subheading">Services</span>
-              <h2 class="mb-4">Why Select Us?</h2>
+              <h2 class="mb-4">Practice Areas</h2>
               <p>
                 A small river named Duden flows by their place and supplies it
                 with the necessary regelialia. It is a paradisematic country, in
@@ -174,23 +291,28 @@
                   href="free-consultation.html
                 "
                   class="btn btn-brand me-2 p-2 fw-normal"
-                  >Free Consultation</a
+                  style="width: 145px"
+                  >Inquire Now</a
                 >
               </p>
             </div>
           </div>
           <div class="col-lg-9 services-wrap px-4 pt-5">
-            <div class="row pt-md-3">
+            <div class="row pt-md-6">
               <div class="col-md-4 d-flex align-items-stretch">
                 <div class="services text-center">
                   <div
                     class="icon d-flex justify-content-center align-items-center"
                   >
-                    <i class="fas fa-solid fa-gavel"></i>
+                    <img
+                      src="../assets/images/property.png"
+                      alt=""
+                      style="height: 60px"
+                    />
                   </div>
                   <div class="text">
-                    <h3>Lorem, ipsum dolor</h3>
-                    <p>
+                    <h3>Land Titling/Transfer</h3>
+                    <p class="fw-light">
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                       Impedit quos nisi, quasi sunt temporibus itaque sed ad
                       facere doloremque illo doloribus architecto! Laborum, vero
@@ -209,11 +331,15 @@
                   <div
                     class="icon d-flex justify-content-center align-items-center"
                   >
-                    <i class="fas fa-solid fa-gavel"></i>
+                    <img
+                      src="../assets/images/land-use.png"
+                      alt=""
+                      style="height: 60px"
+                    />
                   </div>
                   <div class="text">
-                    <h3>Lorem, ipsum dolor</h3>
-                    <p>
+                    <h3>Land Use/Zoning</h3>
+                    <p class="fw-light">
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                       Impedit quos nisi, quasi sunt temporibus itaque sed ad
                       facere doloremque illo doloribus architecto! Laborum, vero
@@ -232,11 +358,15 @@
                   <div
                     class="icon d-flex justify-content-center align-items-center"
                   >
-                    <i class="fas fa-solid fa-gavel"></i>
+                    <img
+                      src="../assets/images/house.png"
+                      alt=""
+                      style="height: 60px"
+                    />
                   </div>
                   <div class="text">
-                    <h3>Lorem, ipsum dolor</h3>
-                    <p>
+                    <h3>Real Estate</h3>
+                    <p class="fw-light">
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                       Impedit quos nisi, quasi sunt temporibus itaque sed ad
                       facere doloremque illo doloribus architecto! Laborum, vero
@@ -255,166 +385,333 @@
         </div>
       </div>
     </section>
-    <!--Section 1 ends-->
+    <!-- Practice Area Section End -->
 
-    <!--Section 2-->
-    <section class="section no-pb no-pt" id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div
-              class="img d-flex align-self-stretch align-items-center justify-content-center justify-content-md-end container-img"
-            >
-              <div class="container-img">
+    <!-- Land Surveying Services Section -->
+    <section class="section" id="land-surveying">
+      <div class="container px-md-5">
+        <div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 text-center heading-section">
+            <span class="subheading">Services</span>
+            <h2 class="mb-4">Land Surveying Services</h2>
+          </div>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-lg-4 text-center image">
+            <div class="land-surveying">
+              <div
+                class="icon d-flex justify-content-center align-items-center"
+              >
                 <img
-                  src="../assets/images/ex-about-1.jpg"
-                  alt="Image 1"
-                  class="image-1 img-fluid"
-                  style="max-height: 33rem; width: 100%"
+                  src="../assets/images/lot-plan.png"
+                  alt="Lot Plan with Vicinity"
                 />
+              </div>
+              <h3>Lot Plan with Vicinity</h3>
+              <p>
+                Preparation of a detailed survey plan that shows the exact
+                boundaries and dimensions of a specific land parcel, along with
+                its surrounding features such as roads, buildings, and
+                landmarks.
+              </p>
+              <div class="hover-image">
                 <img
-                  src="../assets/images/ex-successful-2.jpg"
-                  alt="Image 2"
-                  class="image-2 img-fluid"
-                  style="max-height: 33rem; width: 30rem"
+                  src="../assets/images/real-estate-1.jpg"
+                  alt="Real Estate"
                 />
+                <div class="image-overlay"></div>
               </div>
             </div>
           </div>
-          <div class="col-md-6 py-md-5">
-            <div class="row justify-content-start pt-3 pb-3">
-              <div class="col-md-12 heading-section">
-                <span class="subheading">Welcome to Repol Law Office</span>
-                <h2 class="mb-4">Lorem ipsum dolor sit amet.</h2>
-                <p class="lead" style="font-weight: 400">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Facilis reiciendis quos hic.
-                </p>
-                <p class="lead fs-5" style="font-weight: 200">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Facilis reiciendis quos hic mollitia fugit sint, ut iste
-                  quaerat, dolore pariatur quod quia incidunt, numquam culpa
-                  officia nemo. Veritatis, animi illo.
-                </p>
+          <div class="col-lg-4 text-center image">
+            <div class="land-surveying">
+              <div
+                class="icon d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="../assets/images/relocation.png"
+                  alt="Relocation Survey"
+                />
               </div>
-              <div class="col-md-6">
-                <ul class="list-unstyled achievement">
-                  <li class="pb-4 d-block">
-                    <i class="fas fa-check"></i>&nbsp;&nbsp;&nbsp; Achievement 1
-                  </li>
-                  <li class="pb-4 d-block">
-                    <i class="fas fa-check"></i>&nbsp;&nbsp;&nbsp; Achievement 2
-                  </li>
-                  <li class="pb-4 d-block">
-                    <i class="fas fa-check"></i>&nbsp;&nbsp;&nbsp; Achievement 3
-                  </li>
-                  <!-- Add more achievements as needed -->
-                </ul>
+              <h3>Relocation Survey</h3>
+              <p>
+                We offer relocation services to assist individuals or businesses
+                with moving their properties to a new location. Our team
+                utilizes advanced surveying techniques to ensure that the
+                relocation process is accurate, efficient, and meets all legal
+                requirements.
+              </p>
+              <div class="hover-image">
+                <img
+                  src="../assets/images/real-estate-1.jpg"
+                  alt="Real Estate"
+                />
+                <div class="image-overlay"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 text-center image">
+            <div class="land-surveying">
+              <div
+                class="icon d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="../assets/images/topographic.png"
+                  alt="Topographic Survey"
+                />
+              </div>
+              <h3>Topographic Survey</h3>
+              <p>
+                A topographic survey provides precise land measurements and a
+                comprehensive picture of the layout of an existing site, which
+                can be used to make decisions on the design of drainage systems,
+                the placement of new structures, and the repositioning of
+                existing borders.
+              </p>
+              <div class="hover-image">
+                <img
+                  src="../assets/images/real-estate-1.jpg"
+                  alt="Real Estate"
+                />
+                <div class="image-overlay"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 text-center image">
+            <div class="land-surveying">
+              <div
+                class="icon d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="../assets/images/subdivision.png"
+                  alt="Subdivision Plan"
+                />
+              </div>
+              <h3>Subdivision Plan</h3>
+              <p>
+                Subdivision plan is the action of splitting a massive land area
+                into smaller portions. According to the Subdivision Map Act and
+                the municipal subdivision legislation, this displays
+                monumentation and survey data on a map.
+              </p>
+              <div class="hover-image">
+                <img
+                  src="../assets/images/real-estate-1.jpg"
+                  alt="Real Estate"
+                />
+                <div class="image-overlay"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 text-center image">
+            <div class="land-surveying">
+              <div
+                class="icon d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="../assets/images/construction-site.png"
+                  alt="Site Development Plan"
+                />
+              </div>
+              <h3>Site Development Plan</h3>
+              <p>
+                Site Development plan depicts a site's general configuration and
+                plan, including building footprints, parking and street layouts,
+                lighting and landscaping concepts, site cross section drawings,
+                and building elevations.
+              </p>
+              <div class="hover-image">
+                <img
+                  src="../assets/images/real-estate-1.jpg"
+                  alt="Real Estate"
+                />
+                <div class="image-overlay"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 text-center image">
+            <div class="land-surveying">
+              <div
+                class="icon d-flex justify-content-center align-items-center"
+              >
+                <img src="../assets/images/transfer.png" alt="Transfer Title" />
+              </div>
+              <h3>Transfer Title</h3>
+              <p>
+                Transferring the title of a property from one person to another,
+                whether you're transferring all or part of the property.
+              </p>
+              <div class="hover-image">
+                <img
+                  src="../assets/images/real-estate-1.jpg"
+                  alt="Real Estate"
+                />
+                <div class="image-overlay"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 text-center image">
+            <div class="land-surveying">
+              <div
+                class="icon d-flex justify-content-center align-items-center"
+              >
+                <img src="../assets/images/Aerial.png" alt="Aerial Mapping" />
+              </div>
+              <h3>Aerial Mapping</h3>
+              <p>
+                To survey land for which field surveying is not possible or
+                impractical. Over the past few decades, advances in GPS tracking
+                technology and photographic imaging have allowed this method to
+                flourish.
+              </p>
+              <div class="hover-image">
+                <img
+                  src="../assets/images/real-estate-1.jpg"
+                  alt="Real Estate"
+                />
+                <div class="image-overlay"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 text-center image">
+            <div class="land-surveying">
+              <div
+                class="icon d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="../assets/images/geodetic.png"
+                  alt="Geodetic Engineering Consultancy"
+                />
+              </div>
+              <h3>Geodetic Engineering Consultancy</h3>
+              <p>
+                To review land records, survey records and land titles, use
+                right certificates and verify if up-to-date and accurate on site
+                from which they prepare diagrams, maps, and reports to present
+                in clients and government agencies.
+              </p>
+              <div class="hover-image">
+                <img
+                  src="../assets/images/real-estate-1.jpg"
+                  alt="Real Estate"
+                />
+                <div class="image-overlay"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 text-center image">
+            <div class="land-surveying">
+              <div
+                class="icon d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="../assets/images/construction.png"
+                  alt="Construction Survey"
+                />
+              </div>
+              <h3>Construction Survey</h3>
+              <p>
+                To establish the area and alignment of highways, bridges,
+                buildings, pipelines and other construction projects. This
+                includes taking measurements to determine quantities and then
+                recording these measurements.
+              </p>
+              <div class="hover-image">
+                <img
+                  src="../assets/images/real-estate-1.jpg"
+                  alt="Real Estate"
+                />
+                <div class="image-overlay"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 text-center image">
+            <div class="land-surveying">
+              <div
+                class="icon d-flex justify-content-center align-items-center"
+              >
+                <img src="../assets/images/road.png" alt="Road Profiling" />
+              </div>
+              <h3>Road Profiling</h3>
+              <p>
+                To measure the distance from the road surface and an
+                accelerometer to compensate for the effects of vehicle movement.
+              </p>
+              <div class="hover-image">
+                <img
+                  src="../assets/images/real-estate-1.jpg"
+                  alt="Real Estate"
+                />
+                <div class="image-overlay"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 text-center image">
+            <div class="land-surveying">
+              <div
+                class="icon d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="../assets/images/Parcellary.png"
+                  alt="Parcellary Survey"
+                />
+              </div>
+              <h3>Parcellary Survey</h3>
+              <p>
+                To identify affected properties within Right-of-Way (ROW) limits
+                declared in the detailed road design plans.
+              </p>
+              <div class="hover-image">
+                <img
+                  src="../assets/images/real-estate-1.jpg"
+                  alt="Real Estate"
+                />
+                <div class="image-overlay"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 text-center image">
+            <div class="land-surveying">
+              <div
+                class="icon d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="../assets/images/Verification.png"
+                  alt="Verification Survey"
+                />
+              </div>
+              <h3>Verification Survey</h3>
+              <p>
+                To ensure that previously surveyed landmarks are not materially
+                biased and for the surveyor's opinion on the property or
+                boundary.
+              </p>
+              <div class="hover-image">
+                <img
+                  src="../assets/images/real-estate-1.jpg"
+                  alt="Real Estate"
+                />
+                <div class="image-overlay"></div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- Land Surveying Services Section End -->
 
-    <!--Section 2 ends-->
-
-    <!--Section 3 start-->
-    <section class="section" id="case-studies">
-      <div class="container">
-        <div class="row justify-content-center mb-5">
-          <div class="col-md-10 text-center heading-section">
-            <span class="subheading">Explore Case Studies</span>
-            <h2 class="mb-4">(N)Completed Cases Successfully</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="owl-carousel own-theme">
-              <div class="item">
-                <div
-                  class="case img d-flex align-items-center justify-content-center"
-                  style="
-                    background-image: url('../assets/images/ex-successful-1.jpg');
-                  "
-                >
-                  <div class="text text-center">
-                    <h3>
-                      <a href="#">Lorem ipsum </a>
-                    </h3>
-                    <span>lorem</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div
-                  class="case img d-flex align-items-center justify-content-center"
-                  style="
-                    background-image: url('../assets/images/ex-successful-2.jpg');
-                  "
-                >
-                  <div class="text text-center">
-                    <h3>
-                      <a href="#">Lorem ipsum </a>
-                    </h3>
-                    <span>lorem</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div
-                  class="case img d-flex align-items-center justify-content-center"
-                  style="
-                    background-image: url('../assets/images/ex-successful-3.jpg');
-                  "
-                >
-                  <div class="text text-center">
-                    <h3>
-                      <a href="#">Lorem ipsum </a>
-                    </h3>
-                    <span>lorem</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div
-                  class="case img d-flex align-items-center justify-content-center"
-                  style="
-                    background-image: url('../assets/images/ex-successful-4.jpg');
-                  "
-                >
-                  <div class="text text-center">
-                    <h3>
-                      <a href="#">Lorem ipsum </a>
-                    </h3>
-                    <span>lorem</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-12 text-center mt-4">
-            <a href="case.html" class="btn btn-brand px-5"
-              >See All Successful Cases</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Section 3 ends-->
-
-    <!--Section 4-->
-    <section class="section no-pt" id="attorney">
+    <!--Our Team Section -->
+    <section class="section bg-light" id="team">
       <div class="container-fluid px-md-5">
         <div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 text-center heading-section">
-            <span class="subheading">Our Attorney</span>
-            <h2 class="mb-4">Our Legal Attorneys</h2>
+            <span class="subheading">Our Teams</span>
+            <h2 class="mb-4">Lorem ipsum dolor</h2>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-3 col-sm-6">
-            <div class="block-2">
+            <div class="box-flipper">
               <div class="flipper">
                 <div
                   class="front"
@@ -423,7 +720,7 @@
                   "
                 >
                   <div class="box">
-                    <h2>Attornet 1</h2>
+                    <h2>Team 1</h2>
                     <p>Lawyer</p>
                   </div>
                 </div>
@@ -443,7 +740,7 @@
                       <img src="../assets/images/ex-attorney-1.jpg" alt="" />
                     </div>
                     <div class="name align-self-center ms-3">
-                      Attornry 1 <span class="position"> Lawyer</span>
+                      Team 1 <span class="position"> Lawyer</span>
                     </div>
                   </div>
                 </div>
@@ -451,7 +748,7 @@
             </div>
           </div>
           <div class="col-lg-3 col-sm-6">
-            <div class="block-2">
+            <div class="box-flipper">
               <div class="flipper">
                 <div
                   class="front"
@@ -460,7 +757,7 @@
                   "
                 >
                   <div class="box">
-                    <h2>Attornry 2</h2>
+                    <h2>Team 2</h2>
                     <p>Lawyer</p>
                   </div>
                 </div>
@@ -480,7 +777,7 @@
                       <img src="../assets/images/ex-attorney-2.jpg" alt="" />
                     </div>
                     <div class="name align-self-center ms-3">
-                      Attornry 2<span class="position"> Lawyer</span>
+                      Team 2<span class="position"> Lawyer</span>
                     </div>
                   </div>
                 </div>
@@ -488,7 +785,7 @@
             </div>
           </div>
           <div class="col-lg-3 col-sm-6">
-            <div class="block-2">
+            <div class="box-flipper">
               <div class="flipper">
                 <div
                   class="front"
@@ -497,7 +794,7 @@
                   "
                 >
                   <div class="box">
-                    <h2>Attornry 3</h2>
+                    <h2>Team 3</h2>
                     <p>Lawyer</p>
                   </div>
                 </div>
@@ -517,7 +814,7 @@
                       <img src="../assets/images/ex-attorney-3.jpg" alt="" />
                     </div>
                     <div class="name align-self-center ms-3">
-                      Attornry 3
+                      Team 3
                       <span class="position">Lawyer</span>
                     </div>
                   </div>
@@ -526,7 +823,7 @@
             </div>
           </div>
           <div class="col-lg-3 col-sm-6">
-            <div class="block-2">
+            <div class="box-flipper">
               <div class="flipper">
                 <div
                   class="front"
@@ -535,7 +832,7 @@
                   "
                 >
                   <div class="box">
-                    <h2>Attornry 4</h2>
+                    <h2>Team 4</h2>
                     <p>Lawyer</p>
                   </div>
                 </div>
@@ -555,7 +852,7 @@
                       <img src="../assets/images/ex-attorney-4.jpg" alt="" />
                     </div>
                     <div class="name align-self-center ms-3">
-                      Attornry 4 <span class="position"> Lawyer</span>
+                      Team 4 <span class="position"> Lawyer</span>
                     </div>
                   </div>
                 </div>
@@ -565,209 +862,94 @@
         </div>
       </div>
     </section>
-    <!--Section 4 ends-->
+    <!--Our Team Section End -->
 
-    <!-- Section 5-->
-    <section class="section no-pt no-pb">
-      <div class="container-fluid px-md-5">
-        <div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 text-center heading-section">
-            <span class="subheading">Practice Area</span>
-            <h2 class="mb-4">Lorem</h2>
+    <!-- Case Study -->
+    <section class="section">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-10 text-center heading-section">
+            <span class="subheading">Explore Case Studies</span>
+            <h2 class="mb-4">(N)Completed Cases Successfully</h2>
           </div>
         </div>
-        <div class="row d-flex justify-content-center">
-          <div class="col-md-4 text-center image">
-            <div class="practice-area">
-              <a href="practice-single.html">
-                <div
-                  class="icon d-flex justify-content-center align-items-center"
-                >
-                  <i class="fas fa-solid fa-gavel"></i>
-                </div>
-                <h3>Lorem Law</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
-                  excepturi fuga.
-                </p>
-                <div class="hover-image">
-                  <img
-                    src="../assets/images/real-estate-1.jpg"
-                    alt="Real Estate"
-                  />
-                  <div class="image-overlay"></div>
-                </div>
-              </a>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="owl-carousel own-theme">
+              <div class="item">
+                <a href="case-study-article.html">
+                  <div
+                    class="case img d-flex align-items-center justify-content-center"
+                    style="
+                      background-image: url('../assets/images/ex-successful-1.jpg');
+                    "
+                  >
+                    <div class="text text-center">
+                      <h3>Lorem ipsum</h3>
+                      <span>lorem</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="case-study-article.html">
+                  <div
+                    class="case img d-flex align-items-center justify-content-center"
+                    style="
+                      background-image: url('../assets/images/ex-successful-2.jpg');
+                    "
+                  >
+                    <div class="text text-center">
+                      <h3>Lorem ipsum</h3>
+                      <span>lorem</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="case-study-article.html">
+                  <div
+                    class="case img d-flex align-items-center justify-content-center"
+                    style="
+                      background-image: url('../assets/images/ex-successful-3.jpg');
+                    "
+                  >
+                    <div class="text text-center">
+                      <h3>Lorem ipsum</h3>
+                      <span>lorem</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="case-study-article.html">
+                  <div
+                    class="case img d-flex align-items-center justify-content-center"
+                    style="
+                      background-image: url('../assets/images/ex-successful-4.jpg');
+                    "
+                  >
+                    <div class="text text-center">
+                      <h3>Lorem ipsum</h3>
+                      <span>lorem</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
-          <div class="col-md-4 text-center image">
-            <div class="practice-area">
-              <a href="practice-single.html">
-                <div
-                  class="icon d-flex justify-content-center align-items-center"
-                >
-                  <i class="fas fa-solid fa-gavel"></i>
-                </div>
-                <h3>Lorem Law</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
-                  excepturi fuga.
-                </p>
-                <div class="hover-image">
-                  <img
-                    src="../assets/images/real-estate-1.jpg"
-                    alt="Real Estate"
-                  />
-                  <div class="image-overlay"></div>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4 text-center image">
-            <div class="practice-area">
-              <a href="practice-single.html">
-                <div
-                  class="icon d-flex justify-content-center align-items-center"
-                >
-                  <i class="fas fa-solid fa-gavel"></i>
-                </div>
-                <h3>Lorem Law</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
-                  excepturi fuga.
-                </p>
-                <div class="hover-image">
-                  <img
-                    src="../assets/images/real-estate-1.jpg"
-                    alt="Real Estate"
-                  />
-                  <div class="image-overlay"></div>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4 text-center image">
-            <div class="practice-area">
-              <a href="practice-single.html">
-                <div
-                  class="icon d-flex justify-content-center align-items-center"
-                >
-                  <i class="fas fa-solid fa-gavel"></i>
-                </div>
-                <h3>Lorem Law</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
-                  excepturi fuga.
-                </p>
-                <div class="hover-image">
-                  <img
-                    src="../assets/images/real-estate-1.jpg"
-                    alt="Real Estate"
-                  />
-                  <div class="image-overlay"></div>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4 text-center image">
-            <div class="practice-area">
-              <a href="practice-single.html">
-                <div
-                  class="icon d-flex justify-content-center align-items-center"
-                >
-                  <i class="fas fa-solid fa-gavel"></i>
-                </div>
-                <h3>Lorem Law</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
-                  excepturi fuga.
-                </p>
-                <div class="hover-image">
-                  <img
-                    src="../assets/images/real-estate-1.jpg"
-                    alt="Real Estate"
-                  />
-                  <div class="image-overlay"></div>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4 text-center image">
-            <div class="practice-area">
-              <a href="practice-single.html">
-                <div
-                  class="icon d-flex justify-content-center align-items-center"
-                >
-                  <i class="fas fa-solid fa-gavel"></i>
-                </div>
-                <h3>Lorem Law</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
-                  excepturi fuga.
-                </p>
-                <div class="hover-image">
-                  <img
-                    src="../assets/images/real-estate-1.jpg"
-                    alt="Real Estate"
-                  />
-                  <div class="image-overlay"></div>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4 text-center image">
-            <div class="practice-area">
-              <a href="practice-single.html">
-                <div
-                  class="icon d-flex justify-content-center align-items-center"
-                >
-                  <i class="fas fa-solid fa-gavel"></i>
-                </div>
-                <h3>Lorem Law</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
-                  excepturi fuga.
-                </p>
-                <div class="hover-image">
-                  <img
-                    src="../assets/images/real-estate-1.jpg"
-                    alt="Real Estate"
-                  />
-                  <div class="image-overlay"></div>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4 text-center image">
-            <div class="practice-area">
-              <a href="practice-single.html">
-                <div
-                  class="icon d-flex justify-content-center align-items-center"
-                >
-                  <i class="fas fa-solid fa-gavel"></i>
-                </div>
-                <h3>Lorem Law</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
-                  excepturi fuga.
-                </p>
-                <div class="hover-image">
-                  <img
-                    src="../assets/images/real-estate-1.jpg"
-                    alt="Real Estate"
-                  />
-                  <div class="image-overlay"></div>
-                </div>
-              </a>
-            </div>
+          <div class="col-md-12 text-center mt-4">
+            <a href="case-study.html" class="btn btn-brand px-5"
+              >See All Successful Cases</a
+            >
           </div>
         </div>
       </div>
     </section>
-    <!-- Section 5 ends-->
+    <!-- Case Study End -->
 
-    <!-- Section 6-->
-    <section class="section bg-light">
+    <!-- Blog Section -->
+    <section class="section bg-light" id="blog">
       <div class="container">
         <div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section text-center">
@@ -785,7 +967,7 @@
               </div>
               <a
                 href="blog-single.html"
-                class="block-20"
+                class="blog-img"
                 style="background-image: url('../assets/images/ex-blog-1.jpg')"
               >
               </a>
@@ -816,7 +998,7 @@
               </div>
               <a
                 href="blog-single.html"
-                class="block-20"
+                class="blog-img"
                 style="background-image: url('../assets/images/ex-blog-2.jpg')"
               >
               </a>
@@ -847,7 +1029,7 @@
               </div>
               <a
                 href="blog-single.html"
-                class="block-20"
+                class="blog-img"
                 style="background-image: url('../assets/images/ex-blog-3.jpg')"
               >
               </a>
@@ -872,10 +1054,134 @@
         </div>
       </div>
     </section>
-    <!-- Footer -->
-    <footer class="footer bg-dark footer-section">
+    <!-- Blog Section End -->
+
+    <!-- Client Section -->
+    <!-- Client Section End -->
+
+    <!-- Testimonial Section -->
+    <section class="section" id="testimonial">
       <div class="container">
-        <div class="row mb-5">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-7 text-center heading-section">
+            <span class="subheading">Testimonial</span>
+            <h2 class="mb-4">Happy Clients</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="testimonial-carousel owl-carousel own-theme">
+              <div class="item">
+                <div class="testimony-wrap py-4">
+                  <div class="text">
+                    <p class="mb-4" style="color: #666666d0">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Fuga nihil maiores laboriosam ipsa reprehenderit,
+                      consequatur fugiat? Ullam, aliquam, commodi inventore
+                      ipsum odio culpa saepe, eaque magni laboriosam nesciunt
+                      obcaecati similique!
+                    </p>
+                    <div class="d-flex align-items-center">
+                      <div
+                        class="user-img"
+                        style="
+                          background-image: url('../assets/images/ex-attorney-1.jpg');
+                        "
+                      ></div>
+                      <div class="ps-3">
+                        <p class="name align-self-center ml-3">Client 1</p>
+                        <span class="position">Position</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap py-4">
+                  <div class="text">
+                    <p class="mb-4" style="color: #666666d0">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Fuga nihil maiores laboriosam ipsa reprehenderit,
+                      consequatur fugiat? Ullam, aliquam, commodi inventore
+                      ipsum odio culpa saepe, eaque magni laboriosam nesciunt
+                      obcaecati similique!
+                    </p>
+                    <div class="d-flex align-items-center">
+                      <div
+                        class="user-img"
+                        style="
+                          background-image: url('../assets/images/ex-attorney-2.jpg');
+                        "
+                      ></div>
+                      <div class="ps-3">
+                        <p class="name align-self-center ml-3">Client 2</p>
+                        <span class="position">Position</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap py-4">
+                  <div class="text">
+                    <p class="mb-4" style="color: #666666d0">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Fuga nihil maiores laboriosam ipsa reprehenderit,
+                      consequatur fugiat? Ullam, aliquam, commodi inventore
+                      ipsum odio culpa saepe, eaque magni laboriosam nesciunt
+                      obcaecati similique!
+                    </p>
+                    <div class="d-flex align-items-center">
+                      <div
+                        class="user-img"
+                        style="
+                          background-image: url('../assets/images/ex-attorney-3.jpg');
+                        "
+                      ></div>
+                      <div class="ps-3">
+                        <p class="name align-self-center ml-3">Client 3</p>
+                        <span class="position">Position</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap py-4">
+                  <div class="text">
+                    <p class="mb-4" style="color: #666666d0">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Fuga nihil maiores laboriosam ipsa reprehenderit,
+                      consequatur fugiat? Ullam, aliquam, commodi inventore
+                      ipsum odio culpa saepe, eaque magni laboriosam nesciunt
+                      obcaecati similique!
+                    </p>
+                    <div class="d-flex align-items-center">
+                      <div
+                        class="user-img"
+                        style="
+                          background-image: url('../assets/images/ex-attorney-4.jpg');
+                        "
+                      ></div>
+                      <div class="ps-3">
+                        <p class="name align-self-center ml-3">Client 4</p>
+                        <span class="position">Position</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonial Section End -->
+
+    <!-- Footer -->
+    <footer class="footer bg-dark footer-section" id="contact">
+      <div class="container">
+        <div class="row mb-0">
           <div class="col-md">
             <div class="footer-widget mb-4">
               <a class="footer-brand" href="#">
@@ -914,9 +1220,9 @@
           </div>
 
           <div class="col-md">
-            <div class="footer-widget mb-4 ms-5">
-              <h2 class="heading-2 mt-3 mb-5">Practice Areas</h2>
-              <ul class="list-unstyled">
+            <div class="footer-widget">
+              <h2 class="heading-2 center mt-3 mb-5">Practice Areas</h2>
+              <ul class="list-unstyled center">
                 <li>
                   <a href="#" class="py-1 d-block"
                     ><i class="fas fa-chevron-right me-3 mb-2"></i> Lorem Law</a
@@ -964,11 +1270,11 @@
           <div class="col-md">
             <div class="footer-widget mb-4">
               <h2 class="heading-2 mt-3 mb-5">Have a Questions?</h2>
-              <div class="block-23 mb-3">
+              <div class="information mb-3">
                 <ul>
                   <li>
                     <i class="fas fa-map-marker-alt"></i>
-                    <span class="text">Binan Laguna</span>
+                    <span class="text">Binan Laguna</span>z
                   </li>
                   <li>
                     <i class="fas fa-phone"></i>
@@ -982,7 +1288,6 @@
               </div>
             </div>
           </div>
-
           <div class="col-md">
             <div class="footer-widget mb-4">
               <h2 class="heading-2 mt-3 mb-5">Business Hours</h2>
@@ -1004,6 +1309,7 @@
       </div>
     </footer>
     <!-- Footer ends-->
+
     <!-- Font Awesome -->
     <script
       src="https://kit.fontawesome.com/fdf300571b.js"
@@ -1027,7 +1333,7 @@
     <script src="../assets/js/script.js"></script>
 
     <!-- JQUERY -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <!-- Owl Carousel JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
