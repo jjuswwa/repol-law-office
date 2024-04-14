@@ -3,16 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Case Study Article | Repol Law Office</title>
+    <title>Practice Area Article | Repol Law Office</title>
+
     <!-- Google Font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
     <!-- Bootstap CSS -->
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+
     <!-- Main CSS -->
     <link rel="stylesheet" href="../assets/css/main.css" />
+
     <!-- Owl Carousel CSS -->
     <link rel="stylesheet" href="../assets/css/owl.carousel.min.css" />
     <link
@@ -26,8 +30,11 @@
       :root {
         --primary: #1e781d;
       }
+      .row {
+        --bs-gutter-x: 3.5rem;
+      }
       .section {
-        padding: 8em 0 1em;
+        padding: 8em 0 4em;
         position: relative;
       }
 
@@ -42,17 +49,20 @@
 
       .container-article {
         width: 100%;
-        padding-right: 120px;
-        padding-left: 120px;
+        padding-right: 40px;
+        padding-left: 40px;
         margin-right: auto;
         margin-left: auto;
         overflow: hidden;
       }
+      .container-article h2 {
+        font-weight: 300;
+      }
 
       @media (max-width: 767px) {
         .container-article {
-          padding-right: 15px; 
-          padding-left: 15px; 
+          padding-right: 15px;
+          padding-left: 15px;
         }
       }
       @media (max-width: 768px) {
@@ -61,40 +71,126 @@
         }
       }
 
-      .case-study-image-container {
-        position: relative;
-        overflow: hidden;
-        text-align: center;
-        padding-top: 56.25%; 
-      }
-      .case-study-image {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-      }
       hr {
         border: none;
-        border-top: 4px solid var(--primary); 
+        border-top: 4px solid var(--primary);
         width: 550px;
         margin: 0;
-        margin-bottom: 30px; 
+        margin-bottom: 30px;
       }
 
       @media (max-width: 991px) {
         hr {
-          width: calc(
-            100% - 20px
-          ); 
+          width: calc(100% - 20px);
           margin-left: 10px;
         }
       }
       .article-text {
-        font-size: 16px; 
+        font-size: 16px;
         line-height: 1.8;
-        margin-bottom: 20px; 
+        margin-bottom: 20px;
+      }
+
+      .sidebar-box {
+        position: relative;
+        top: 18px;
+        margin-bottom: 40px;
+        font-size: 15px;
+        width: 100%;
+        float: left;
+        background: #fff;
+      }
+
+      .sidebar-box *:last-child {
+        margin-bottom: 0;
+      }
+
+      .sidebar-box h3 {
+        font-size: 18px;
+        margin-bottom: 22px;
+        font-weight: 700;
+        color: #2e2e1f;
+      }
+
+      .categories li,
+      .sidelink li {
+        position: relative;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #dee2e6;
+        list-style: none;
+      }
+
+      .categories li:last-child,
+      .sidelink li:last-child {
+        margin-bottom: 0;
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+
+      .categories li a,
+      .sidelink li a {
+        display: block;
+        color: #7a7a7a;
+        font-weight: 600;
+      }
+
+      .categories li a span,
+      .sidelink li a span {
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: #ccc;
+      }
+
+      .categories li a:hover,
+      .categories li a:focus,
+      .sidelink li a:hover,
+      .sidelink li a:focus {
+        outline: none;
+        color: var(--primary);
+      }
+
+      .categories li.active a,
+      .sidelink li.active a {
+        color: var(--primary);
+      }
+
+      .categories li.active a span,
+      .sidelink li.active a span {
+        color: var(--primary);
+      }
+
+      .recent-blog .blog-img {
+        display: block;
+        height: 80px;
+        width: 80px;
+      }
+
+      .recent-blog .text {
+        width: calc(100% - 100px);
+      }
+      .recent-blog .text .heading {
+        font-size: 16px;
+        font-weight: 400;
+        padding-left: 15px;
+      }
+      .recent-blog .text .heading a {
+        color: #000000;
+      }
+      .recent-blog .text .heading a:hover,
+      .recent-blog .text .heading a:active,
+      .recent-blog .text .heading a:focus {
+        color: var(--primary);
+      }
+      .recent-blog .text .meta > div {
+        display: inline-block;
+        font-size: 12px;
+        margin-right: 5px;
+      }
+      .recent-blog .text .meta > div a {
+        padding-left: 15px;
+        color: gray;
       }
     </style>
   </head>
@@ -201,48 +297,201 @@
 
     <!-- Article -->
     <section class="section">
-      <div class="container container-article py-4">
-        <div class="row mb-5">
-          <div class="col-lg-6">
-            <p class="fw-light text-uppercase">April 3, 2024</p>
-            <h1 class="mb-4">Case Study Title</h1>
-            <p class="article-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repudiandae soluta ipsum cum excepturi expedita voluptates
-              doloribus reprehenderit aperiam porro rem necessitatibus iste
-              explicabo corrupti eos aliquid, eaque exercitationem quos a.
+      <div class="container container-article">
+        <div class="row">
+          <div class="col-lg-8">
+            <p>
+              <img src="../assets/images/ex-blog-1.jpg" alt="" />
             </p>
-          </div>
-          <div class="col-lg-6">
-            <div class="case-study-image-container">
-              <img
-                src="../assets/images/ex-successful-1.jpg"
-                alt="Case Study Image"
-                class="case-study-image"
-              />
+            <h2 class="mb-4 mt-4">Header article</h2>
+            <p class="article-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Reiciendis, eius mollitia suscipit, quisquam doloremque distinctio
+              perferendis et doloribus unde architecto optio laboriosam porro
+              adipisci sapiente officiis nemo accusamus ad praesentium? Esse
+              minima nisi et. Dolore perferendis, enim praesentium omnis, iste
+              doloremque quia officia optio deserunt molestiae voluptates soluta
+              architecto tempora.
+            </p>
+            <h2 class="mb-3 mt-5">How Can We Help !</h2>
+            <p>
+              Temporibus ad error suscipit exercitationem hic molestiae totam
+              obcaecati rerum, eius aut, in. Exercitationem atque quidem tempora
+              maiores ex architecto voluptatum aut officia doloremque. Error
+              dolore voluptas, omnis molestias odio dignissimos culpa ex earum
+              nisi consequatur quos odit quasi repellat qui officiis reiciendis
+              incidunt hic non? Debitis commodi aut, adipisci.
+            </p>
+            <p>
+              <a href="#" class="btn btn-brand">Inquire Now</a>
+            </p>
+            <div class="row mt-5 pt-5">
+              <div class="col-md-12">
+                <h2 class="mb-4 font-weight-bold">Our Legal Advisors</h2>
+              </div>
+              <div class="col-lg-6">
+                <div class="box-flipper">
+                  <div class="flipper">
+                    <div
+                      class="front"
+                      style="
+                        background-image: url('../assets/images/ex-attorney-1.jpg');
+                      "
+                    >
+                      <div class="job-title">
+                        <h2>Team 1</h2>
+                        <p>Lawyer</p>
+                      </div>
+                    </div>
+                    <div class="back">
+                      <!-- back content -->
+                      <blockquote>
+                        <p>
+                          &ldquo;Lorem ipsum dolor sit amet consectetur
+                          adipisicing elit. Sit velit maiores possimus eligendi
+                          quas pariatur minus consequatur suscipit asperiores
+                          quo placeat, laborum facere similique adipisci? Dicta
+                          aliquid optio nostrum earum. &rdquo;
+                        </p>
+                      </blockquote>
+                      <div class="author d-flex">
+                        <div class="image align-self-center">
+                          <img
+                            src="../assets/images/ex-attorney-1.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="name align-self-center ms-3">
+                          Team 1 <span class="position"> Lawyer</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <hr />
-        <div class="row mb-4">
-          <div class="col-lg-9">
-            <h2>Long Description</h2>
-            <p class="article-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-              ad vitae similique vel, sequi culpa iusto odit odio. Neque, earum.
-              Alias quam cumque reiciendis reprehenderit doloribus assumenda
-              commodi beatae id. Lorem ipsum dolor sit, amet consectetur
-              adipisicing elit. Numquam, modi excepturi officia vitae illo
-              distinctio doloremque ipsa provident alias, sapiente
-              exercitationem delectus repudiandae unde eveniet, doloribus
-              tenetur voluptatem ipsum ad?
-            </p>
-            <p class="article-text">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Corrupti, at vero consectetur quia fuga a eius ratione aperiam
-              facere possimus natus voluptatem tempore minima hic maiores labore
-              quo dolores quas. lorem
-            </p>
+
+          <!-- RIGHT SIDE-->
+          <div class="col-lg-4 sidebar pl-lg-5">
+            <!-- CATEGORIES OF PRACTICE AREAS -->
+            <div class="sidebar-box">
+              <div class="categories">
+                <h3>Practice Area</h3>
+                <li class="active">
+                  <a href="pa-article.html"
+                    >Lorem Law
+                    <span class="fas fa-chevron-right me-3 mb-2"></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="pa-article.html"
+                    >Lorem Law
+                    <span class="fas fa-chevron-right me-3 mb-23"></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="pa-article.html"
+                    >Lorem Law
+                    <span class="fas fa-chevron-right me-3 mb-2"></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="pa-article.html"
+                    >Lorem Law<span
+                      class="fas fa-chevron-right me-3 mb-2"
+                    ></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="pa-article.html"
+                    >Lorem Law
+                    <span class="fas fa-chevron-right me-3 mb-2"></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="pa-article.html"
+                    >Lorem Law<span
+                      class="fas fa-chevron-right me-3 mb-2"
+                    ></span
+                  ></a>
+                </li>
+              </div>
+            </div>
+
+            <!-- RECENT BLOG-->
+            <div class="sidebar-box">
+              <h3>Recent Blog</h3>
+              <div class="recent-blog mb-4 d-flex">
+                <a
+                  class="blog-img mr-4"
+                  style="
+                    background-image: url('../assets/images/ex-blog-1.jpg');
+                  "
+                ></a>
+                <div class="text">
+                  <h3 class="heading">
+                    <a href="#"
+                      >Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Harum doloremque.</a
+                    >
+                  </h3>
+                  <div class="meta">
+                    <div>
+                      <a href="#"
+                        ><span class="icon-calendar"></span> Month. 01, Year</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="recent-blog mb-4 d-flex">
+                <a
+                  class="blog-img mr-4"
+                  style="
+                    background-image: url('../assets/images/ex-blog-2.jpg');
+                  "
+                ></a>
+                <div class="text">
+                  <h3 class="heading">
+                    <a href="#"
+                      >Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Harum doloremque.</a
+                    >
+                  </h3>
+                  <div class="meta">
+                    <div>
+                      <a href="#"
+                        ><span class="icon-calendar"></span> Month. 01, Year</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="recent-blog mb-4 d-flex">
+                <a
+                  class="blog-img mr-4"
+                  style="
+                    background-image: url('../assets/images/ex-blog-3.jpg');
+                  "
+                ></a>
+                <div class="text">
+                  <h3 class="heading">
+                    <a href="#"
+                      >Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Harum doloremque.</a
+                    >
+                  </h3>
+                  <div class="meta">
+                    <div>
+                      <a href="#"
+                        ><span class="icon-calendar"></span>Month. 01, Year</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -291,8 +540,7 @@
                   <a href="#"><i class="fab fa-instagram"></i></a>
                 </li>
               </ul>
-               <!-- Social Media End-->
-
+              <!-- Social Media End-->
             </div>
           </div>
 
@@ -388,7 +636,7 @@
               </div>
             </div>
           </div>
-           <!-- Open Hours End -->
+          <!-- Open Hours End -->
         </div>
       </div>
     </footer>
@@ -414,7 +662,6 @@
     ></script>
 
     <!-- JavaScript -->
-    <script src="../assets/js/case-study.js"></script>
     <script src="../assets/js/script.js"></script>
 
     <!-- JQUERY -->

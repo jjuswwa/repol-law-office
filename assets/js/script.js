@@ -9,23 +9,50 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   const navLinks = document.querySelectorAll(".nav-link");
+// Navbar activation link(Mobile & Tablet)
+document.addEventListener("DOMContentLoaded", function () {
+  const navLinks = document.querySelectorAll(".nav-link");
+  const navbarToggle = document.querySelector(".navbar-toggler");
 
-//   navLinks.forEach(function (navLink) {
-//     navLink.addEventListener("click", function () {
-//       // Remove active class from all links
-//       navLinks.forEach(function (link) {
-//         link.classList.remove("active");
-//         link.style.color = "var(--white)"; // Reset color to default for all links
-//       });
+  navLinks.forEach(function (link) {
+    link.addEventListener("click", function (event) {
+      navLinks.forEach(function (otherLink) {
+        otherLink.classList.remove("active");
+      });
+      this.classList.add("active");
 
-//       // Add active class to the clicked link and change color
-//       this.classList.add("active");
-//       this.style.color = "var(--primary)"; // Change color for the clicked link
-//     });
-//   });
-// });
+      // Close the navigation menu after a link is clicked (for mobile devices)
+      if (
+        navbarToggle &&
+        window.innerWidth <= 991.98 &&
+        !isWithinDropdown(event.target) &&
+        !navbarToggle.classList.contains("collapsed")
+      ) {
+        navbarToggle.click();
+      }
+    });
+  });
+
+  const dropdownItems = document.querySelectorAll(".dropdown-item");
+  dropdownItems.forEach(function (item) {
+    item.addEventListener("click", function (event) {
+      if (!isWithinDropdown(event.target)) {
+        navbarToggle.click();
+      }
+    });
+  });
+
+  function isWithinDropdown(element) {
+    let parent = element.parentElement;
+    while (parent) {
+      if (parent.classList.contains("dropdown")) {
+        return true;
+      }
+      parent = parent.parentElement;
+    }
+    return false;
+  }
+});
 
 // Array of words to be typed
 const wordsToType = ["Freedom.", "Rights.", "Case.", "Custody."];
@@ -77,18 +104,24 @@ function restoreImage() {
     "url('../assets/images/ex-about-1.jpg')";
 }
 
-//Year
-// Get the span element containing the years
+// Year //
 const yearsSpan = document.getElementById("years-experienced");
-
-// Get the start year from the data attribute
 const startYear = parseInt(yearsSpan.dataset.startYear);
-
-// Calculate the current year
 const currentYear = new Date().getFullYear();
-
-// Calculate the number of years of experience
 const yearsOfExperience = currentYear - startYear;
-
-// Update the text content of the span element
 yearsSpan.textContent = yearsOfExperience;
+
+//Modal
+document.addEventListener("DOMContentLoaded", function () {
+  const profileModal = document.querySelector(".profileModalTrigger");
+  const backgroundModal = document.querySelector(".background-modal");
+  const closeBtn = document.querySelector(".close");
+
+  profileModal.addEventListener("click", function () {
+    backgroundModal.style.display = "block";
+  });
+
+  closeBtn.addEventListener("click", function () {
+    backgroundModal.style.display = "none";
+  });
+});

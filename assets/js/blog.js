@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
   const elementsPerPage = 6; // Number of elements per page
-  const caseContents = document.querySelectorAll(".case-content");
+  const blogContents = document.querySelectorAll(".blog-entry");
   const pagination = document.querySelector(".pagination");
 
-  // Function to hide all case contents
+  // Function to hide all blog contents
   function hideAllContents() {
-    caseContents.forEach((content) => {
+    blogContents.forEach((content) => {
       content.style.display = "none";
     });
   }
@@ -15,13 +15,13 @@ document.addEventListener("DOMContentLoaded", function () {
     hideAllContents();
     const startIndex = (pageNumber - 1) * elementsPerPage;
     const endIndex = startIndex + elementsPerPage;
-    for (let i = startIndex; i < endIndex && i < caseContents.length; i++) {
-      caseContents[i].style.display = "block";
+    for (let i = startIndex; i < endIndex && i < blogContents.length; i++) {
+      blogContents[i].style.display = "block";
     }
   }
 
   // Calculate total pages
-  const totalPages = Math.ceil(caseContents.length / elementsPerPage);
+  const totalPages = Math.ceil(blogContents.length / elementsPerPage);
 
   // Generate pagination links for mobile devices
   function generateMobilePaginationLinks(currentPage) {
