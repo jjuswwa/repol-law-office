@@ -316,9 +316,10 @@ img {
 
 /** Hero  **/
 #hero {
-  background-image: url("../images/ex-attorney-1.jpg");
-  background-position: center;
-  background-size: cover;
+  background: linear-gradient(rgba(51, 41, 141, 0.555), rgba(0, 0, 0, 0.637)),
+  url("../images/ex-bg-1.jpg");
+background-position: center;
+background-size: cover;
 }
 
 #hero h6 {
