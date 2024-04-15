@@ -316,7 +316,7 @@ img {
 
 /** Hero  **/
 #hero {
-background-image: url('/assets/images/ex-attorney-1.jpg');
+  background-image: url("../images/ex-attorney-1.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -1216,7 +1216,7 @@ p {
 .footer {
   font-size: 16px;
   background: linear-gradient(rgba(51, 41, 141, 0.555), rgba(0, 0, 0, 0.637)),
-    url("./assets/images/ex-bg-1.jpg");
+    url("../images/ex-bg-1.jpg");
   background-position: center;
   background-size: cover;
   padding: 5em 0 3em 0;
@@ -1377,7 +1377,7 @@ p {
 /** New Page **/
 .hero-wrap {
   background: linear-gradient(rgba(51, 41, 141, 0.555), rgba(0, 0, 0, 0.637)),
-    url("./assets/images/ex-bg-1.jpg");
+    url("../images/ex-bg-1.jpg");
   background-position: center;
   background-size: cover;
 }
