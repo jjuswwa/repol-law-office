@@ -312,7 +312,7 @@ img {
 /** Hero  **/
 #hero {
   background: linear-gradient(rgba(12, 12, 58, 0.733), rgba(8, 8, 62, 0.486)),
-    /* palitan ng mas better na overlay */ url("../assets/images/ex-bg-1.jpg");
+    /* palitan ng mas better na overlay */ url("assets/images/ex-bg-1.jpg");
   background-position: center;
   background-size: cover;
 }
