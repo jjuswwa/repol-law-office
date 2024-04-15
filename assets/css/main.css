@@ -9,6 +9,9 @@
   --primary: #cdba6d; /* #1b4764; */
   --button-hover: #0e2433; /* #bea541 */
   --button: #cdba6d; /* gold button #cdba6d; */
+  --content: #0e2433; /* mamayakasakin */
+  --headline: #1b4764;
+  --description: #666666;
   --white: #fff;
   --light: #f8f9fa;
   --dark: #343a40;
@@ -26,7 +29,8 @@
   --text-light: 13px;
 
   /** Font Family **/
-  --font-family: "Serif", sans-serif;
+  --font-family: "Times New Roman", Times;
+  --font-description: "Poppins", sans-serif;
 }
 
 /** Rest & Helper **/
@@ -85,6 +89,7 @@ img {
   padding-bottom: 0 !important;
 }
 
+
 /** Rest & Helper End **/
 
 /** Navbar **/
@@ -101,7 +106,8 @@ img {
 }
 
 .navbar-nav .nav-link {
-  font-weight: 500;
+  font-family: var(--font-description);
+  font-weight: 300;
   color: var(--white);
   margin: 0.5rem;
   font-size: 1.1rem;
@@ -211,13 +217,18 @@ img {
   justify-content: center;
   align-items: center;
   border-radius: round;
-  padding-top: 10px;
+  padding-top: 13px;
 }
 
 .btn-brand {
+  font-family: var(--font-description);
   background-color: var(--button);
   border-color: var(--button);
   color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 13px;
+  font-weight: 500;
   box-shadow: 0px 15px 34px -10px rgba(0, 0, 0, 0.445);
 }
 
@@ -318,6 +329,7 @@ img {
 
 #hero p {
   width: 45%;
+  font-family: var(--font-description);
 }
 
 @media screen and (max-width: 600px) {
@@ -361,6 +373,7 @@ img {
 .section {
   padding: 4em 0;
   position: relative;
+  /* background-color: red; */
 }
 
 @media (max-width: 768px) {
@@ -369,12 +382,21 @@ img {
   }
 }
 
+.section .headline {
+  color: var(--headline);
+}
+
+.section p {
+  color: var(--description);
+  font-family: var(--font-description);
+}
 .heading-section .subheading {
   text-transform: uppercase;
   font-size: 18px;
   display: block;
+  font-family: var(--font-description);
   margin-bottom: 5px;
-  font-weight: 700;
+  font-weight: 400;
   color: var(--button);
 }
 
@@ -583,10 +605,15 @@ img {
   bottom: -35px;
   left: 0;
   right: 0;
-  width: 120px;
+  width: 130px;
   height: 50px;
   border-radius: 7px;
   background: var(--button);
+  font-family: var(--font-description);
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 2px;
   margin: 0 auto;
   opacity: 0;
   transition: all 0.3s ease;
@@ -822,7 +849,7 @@ p {
 
 /* Back Content */
 .box-flipper .back {
-  background: var(--primary);
+  background: var(--content);
   box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.4);
   transform: rotateY(-180deg);
 }
@@ -995,7 +1022,7 @@ p {
   position: absolute;
   top: 0;
   left: 20px;
-  background: var(--button);
+  background: var(--content);
 }
 
 .blog-entry .text .topper:after {
@@ -1007,7 +1034,7 @@ p {
   height: 0;
   border-style: solid;
   border-width: 10px 10px 0 10px;
-  border-color: var(--button) transparent transparent transparent;
+  border-color: var(--content) transparent transparent transparent;
 }
 
 .blog-entry .text .heading {
@@ -1017,7 +1044,7 @@ p {
 }
 
 .blog-entry .text .heading a {
-  color: #000000;
+  color: #1b4764;
 }
 
 .blog-entry .text .heading a:hover,
@@ -1177,7 +1204,10 @@ p {
 /* Footer */
 .footer {
   font-size: 16px;
-  background: #222831;
+  background: linear-gradient(rgba(51, 41, 141, 0.555), rgba(0, 0, 0, 0.637)),
+    url("/assets/images/ex-bg-1.jpg");
+  background-position: center;
+  background-size: cover;
   padding: 5em 0 3em 0;
 }
 
@@ -1205,7 +1235,7 @@ p {
 
 .footer .footer-widget h2 {
   font-weight: normal;
-  color: #fff;
+  color: var(--primary);
   margin-bottom: 20px;
   font-size: 20px;
 }
@@ -1335,7 +1365,7 @@ p {
 
 /** New Page **/
 .hero-wrap {
-  background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.438)),
+  background: linear-gradient(rgba(51, 41, 141, 0.555), rgba(0, 0, 0, 0.637)),
     url("/assets/images/ex-bg-1.jpg");
   background-position: center;
   background-size: cover;
