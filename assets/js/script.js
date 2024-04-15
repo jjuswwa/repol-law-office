@@ -112,16 +112,16 @@ const yearsOfExperience = currentYear - startYear;
 yearsSpan.textContent = yearsOfExperience;
 
 //Modal
-// document.addEventListener("DOMContentLoaded", function () {
-//   const profileModal = document.querySelector(".profileModalTrigger");
-//   const backgroundModal = document.querySelector(".background-modal");
-//   const closeBtn = document.querySelector(".close");
+document.addEventListener("DOMContentLoaded", function () {
+  const profileModal = document.querySelector(".profileModalTrigger");
+  const backgroundModal = document.querySelector(".background-modal");
+  const closeBtn = document.querySelector(".close");
 
-//   profileModal.addEventListener("click", function () {
-//     backgroundModal.style.display = "block";
-//   });
+  profileModal.addEventListener("click", function () {
+    backgroundModal.style.display = "block";
+  });
 
-//   closeBtn.addEventListener("click", function () {
-//     backgroundModal.style.display = "none";
-//   });
-// });
+  closeBtn.addEventListener("click", function () {
+    backgroundModal.style.display = "none";
+  });
+});

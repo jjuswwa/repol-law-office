@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 /** Variables **/
 :root {
   --transition: all 0.5s ease;
@@ -314,11 +316,7 @@ img {
 
 /** Hero  **/
 #hero {
-  background-image: linear-gradient(
-      rgba(12, 12, 58, 0.733),
-      rgba(8, 8, 62, 0.486)
-    ),
-    url("../images/ex-bg-1.jpg");
+background-image: url('/assets/images/ex-attorney-1.jpg');
   background-position: center;
   background-size: cover;
 }
@@ -1179,7 +1177,7 @@ p {
   border: 0px solid transparent;
   border-radius: 10px;
   box-shadow: 0px 10px 21px -14px rgba(0, 0, 0, 0.14);
-  background: linear-gradient(to bottom, transparent, #00000010);
+  background-image: linear-gradient(to bottom, transparent, #00000010);
 }
 
 .testimony-wrap .user-img {
@@ -1218,7 +1216,7 @@ p {
 .footer {
   font-size: 16px;
   background: linear-gradient(rgba(51, 41, 141, 0.555), rgba(0, 0, 0, 0.637)),
-    url("/assets/images/ex-bg-1.jpg");
+    url("./assets/images/ex-bg-1.jpg");
   background-position: center;
   background-size: cover;
   padding: 5em 0 3em 0;
@@ -1379,7 +1377,7 @@ p {
 /** New Page **/
 .hero-wrap {
   background: linear-gradient(rgba(51, 41, 141, 0.555), rgba(0, 0, 0, 0.637)),
-    url("/assets/images/ex-bg-1.jpg");
+    url("./assets/images/ex-bg-1.jpg");
   background-position: center;
   background-size: cover;
 }
