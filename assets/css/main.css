@@ -316,7 +316,7 @@ img {
 
 /** Hero  **/
 #hero {
-background-image: url('./assets/images/mission.png');
+background-image: url('./images/mission.png');
   background-position: center;
   background-size: cover;
 }
