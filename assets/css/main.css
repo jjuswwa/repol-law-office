@@ -920,7 +920,7 @@ p {
   font-family: "Poppins", Arial, sans-serif;
   font-weight: normal;
 }
-
+/* 
 @media (max-width: 991.98px) {
   .box-flipper .back {
     transform: rotateY(0deg);
@@ -929,7 +929,7 @@ p {
   .box-flipper.front {
     transform: rotateY(180deg);
   }
-}
+} */
 .learn-more-btn {
   display: block;
   position: absolute;
