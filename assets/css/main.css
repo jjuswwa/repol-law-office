@@ -904,7 +904,7 @@ p {
 
 .box-flipper .details .name,
 .box-flipper .details .position {
-  text-align: center; 
+  text-align: center;
 }
 .box-flipper .details .name {
   font-size: 18px;
@@ -920,8 +920,8 @@ p {
   font-family: "Poppins", Arial, sans-serif;
   font-weight: normal;
 }
-/* 
-@media (max-width: 991.98px) {
+
+/* @media (max-width: 991.98px) {
   .box-flipper .back {
     transform: rotateY(0deg);
   }
@@ -1231,9 +1231,8 @@ p {
 
 /* Footer */
 .footer {
-  font-size: 16px;
-  background: linear-gradient(rgba(51, 41, 141, 0.555), rgba(0, 0, 0, 0.637)),
-    url("../images/ex-bg-1.jpg");
+  background: linear-gradient(rgba(0, 46, 87, 0.432), rgba(0, 47, 87, 0.432)),
+    url("../images/footer-bg.jpg");
   background-position: center;
   background-size: cover;
   padding: 5em 0 3em 0;
@@ -1392,7 +1391,7 @@ p {
 
 /** New Page **/
 .hero-wrap {
-  background: linear-gradient(rgba(51, 41, 141, 0.555), rgba(0, 0, 0, 0.637)),
+  background: linear-gradient(rgba(0, 46, 87, 0.432), rgba(0, 47, 87, 0.432)),
     url("../images/ex-bg-1.jpg");
   background-position: center;
   background-size: cover;
