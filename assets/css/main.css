@@ -1280,7 +1280,7 @@ p {
 /* Footer */
 .footer {
   background: linear-gradient(rgba(0, 46, 87, 0.432), rgba(0, 47, 87, 0.432)),
-    url("/assets/images/footer-bg.jpg");
+    url("../images/footer-bg.jpg");
   background-position: center;
   background-size: cover;
   padding: 5em 0 3em 0;
