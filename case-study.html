@@ -27,6 +27,64 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <style>
+      .img {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+
+      .case {
+        height: 300px;
+        margin-bottom: 30px;
+        z-index: 0;
+        position: relative;
+        box-shadow: 0px 5px 21px -14px rgba(0, 0, 0, 0.14);
+      }
+
+      .case:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: "";
+        background: var(--primary);
+        opacity: 0;
+        z-index: -1;
+        transition: all 0.3s ease;
+      }
+
+      .case .text {
+        z-index: 1;
+        width: 100;
+        opacity: 0;
+        transition: all 0.3s ease;
+      }
+
+      .case .text h3 {
+        color: #fff;
+        font-size: 22px;
+      }
+
+      .case .text span {
+        color: rgba(255, 255, 255, 0.9);
+      }
+
+      .case:hover:after {
+        opacity: 0.5;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+      }
+
+      .case:hover .text {
+        opacity: 1;
+      }
+    </style>
   </head>
   <body>
     <!-- Navbar -->
@@ -78,7 +136,9 @@
                 href="index.html"
                 >Home</a
               >
-              <a class="nav-item nav-link mx-2" href="index.html#about">About</a>
+              <a class="nav-item nav-link mx-2" href="index.html#about"
+                >About</a
+              >
               <a class="nav-item nav-link mx-2" href="blog.html">Blog</a>
               <a class="nav-item nav-link mx-2" href="#contact">Contact</a>
               <div class="nav-item dropdown">
@@ -101,9 +161,13 @@
                   >
                   <a class="dropdown-item" href="index.html#team">Our Team</a>
 
-                  <a class="dropdown-item" href="index.html#client">Our Client</a>
+                  <a class="dropdown-item" href="index.html#client"
+                    >Our Client</a
+                  >
 
-                  <a class="dropdown-item" href="index.html#testimonial">Testimonial</a>
+                  <a class="dropdown-item" href="index.html#testimonial"
+                    >Testimonial</a
+                  >
                   <hr class="dropdown-divider" />
                   <a class="dropdown-item" href="case-study.html"
                     >Case Studies</a
@@ -152,7 +216,23 @@
               <div
                 class="case img d-flex align-items-center justify-content-center"
                 style="
-                  background-image: url('assets/images/ex-successful-1.jpg');
+                  background-image: url('assets/images/case-study/ex-successful-1.jpg');
+                "
+              >
+                <div class="text text-center">
+                  <h3>Legal Separation</h3>
+                  <span>Corporate</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- 1 -->
+          <div class="col-md-4 case-content">
+            <a href="case-study-article.html">
+              <div
+                class="case img d-flex align-items-center justify-content-center"
+                style="
+                  background-image: url('assets/images/case-study/ex-successful-2.jpg');
                 "
               >
                 <div class="text text-center">
@@ -167,7 +247,7 @@
               <div
                 class="case img d-flex align-items-center justify-content-center"
                 style="
-                  background-image: url('assets/images/ex-successful-2.jpg');
+                  background-image: url('assets/images/case-study/ex-successful-3.jpg');
                 "
               >
                 <div class="text text-center">
@@ -182,7 +262,7 @@
               <div
                 class="case img d-flex align-items-center justify-content-center"
                 style="
-                  background-image: url('assets/images/ex-successful-3.jpg');
+                  background-image: url('assets/images/case-study/ex-successful-4.jpg');
                 "
               >
                 <div class="text text-center">
@@ -197,7 +277,7 @@
               <div
                 class="case img d-flex align-items-center justify-content-center"
                 style="
-                  background-image: url('assets/images/ex-successful-4.jpg');
+                  background-image: url('assets/images/case-study/ex-successful-5.jpg');
                 "
               >
                 <div class="text text-center">
@@ -212,7 +292,7 @@
               <div
                 class="case img d-flex align-items-center justify-content-center"
                 style="
-                  background-image: url('assets/images/ex-successful-5.jpg');
+                  background-image: url('assets/images/case-study/ex-successful-6.jpg');
                 "
               >
                 <div class="text text-center">
@@ -227,7 +307,7 @@
               <div
                 class="case img d-flex align-items-center justify-content-center"
                 style="
-                  background-image: url('assets/images/ex-successful-6.jpg');
+                  background-image: url('assets/images/case-study/ex-successful-6.jpg');
                 "
               >
                 <div class="text text-center">
@@ -242,7 +322,7 @@
               <div
                 class="case img d-flex align-items-center justify-content-center"
                 style="
-                  background-image: url('assets/images/ex-successful-6.jpg');
+                  background-image: url('assets/images/case-study/ex-successful-5.jpg');
                 "
               >
                 <div class="text text-center">
@@ -257,7 +337,7 @@
               <div
                 class="case img d-flex align-items-center justify-content-center"
                 style="
-                  background-image: url('assets/images/ex-successful-5.jpg');
+                  background-image: url('assets/images/case-study/ex-successful-4.jpg');
                 "
               >
                 <div class="text text-center">
@@ -272,7 +352,7 @@
               <div
                 class="case img d-flex align-items-center justify-content-center"
                 style="
-                  background-image: url('assets/images/ex-successful-4.jpg');
+                  background-image: url('assets/images/case-study/ex-successful-3.jpg');
                 "
               >
                 <div class="text text-center">
@@ -287,7 +367,7 @@
               <div
                 class="case img d-flex align-items-center justify-content-center"
                 style="
-                  background-image: url('assets/images/ex-successful-3.jpg');
+                  background-image: url('assets/images/case-study/ex-successful-2.jpg');
                 "
               >
                 <div class="text text-center">
@@ -302,7 +382,39 @@
               <div
                 class="case img d-flex align-items-center justify-content-center"
                 style="
-                  background-image: url('assets/images/ex-successful-2.jpg');
+                  background-image: url('assets/images/case-study/ex-successful-1.jpg');
+                "
+              >
+                <div class="text text-center">
+                  <h3>Legal Separation</h3>
+                  <span>Corporate</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- 12-->
+          <div class="col-md-4 case-content">
+            <a href="case-study-article.html">
+              <div
+                class="case img d-flex align-items-center justify-content-center"
+                style="
+                  background-image: url('assets/images/case-study/ex-successful-1.jpg');
+                "
+              >
+                <div class="text text-center">
+                  <h3>Legal Separation</h3>
+                  <span>Corporate</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- 1-->
+          <div class="col-md-4 case-content">
+            <a href="case-study-article.html">
+              <div
+                class="case img d-flex align-items-center justify-content-center"
+                style="
+                  background-image: url('assets/images/case-study/ex-successful-2.jpg');
                 "
               >
                 <div class="text text-center">
@@ -317,7 +429,7 @@
               <div
                 class="case img d-flex align-items-center justify-content-center"
                 style="
-                  background-image: url('assets/images/ex-successful-1.jpg');
+                  background-image: url('assets/images/case-study/ex-successful-3.jpg');
                 "
               >
                 <div class="text text-center">
@@ -332,7 +444,7 @@
               <div
                 class="case img d-flex align-items-center justify-content-center"
                 style="
-                  background-image: url('assets/images/ex-successful-1.jpg');
+                  background-image: url('assets/images/case-study/ex-successful-4.jpg');
                 "
               >
                 <div class="text text-center">
@@ -347,7 +459,7 @@
               <div
                 class="case img d-flex align-items-center justify-content-center"
                 style="
-                  background-image: url('assets/images/ex-successful-2.jpg');
+                  background-image: url('assets/images/case-study/ex-successful-5.jpg');
                 "
               >
                 <div class="text text-center">
@@ -362,7 +474,7 @@
               <div
                 class="case img d-flex align-items-center justify-content-center"
                 style="
-                  background-image: url('assets/images/ex-successful-3.jpg');
+                  background-image: url('assets/images/case-study/ex-successful-6.jpg');
                 "
               >
                 <div class="text text-center">
@@ -377,7 +489,7 @@
               <div
                 class="case img d-flex align-items-center justify-content-center"
                 style="
-                  background-image: url('assets/images/ex-successful-4.jpg');
+                  background-image: url('assets/images/case-study/ex-successful-6.jpg');
                 "
               >
                 <div class="text text-center">
@@ -392,7 +504,7 @@
               <div
                 class="case img d-flex align-items-center justify-content-center"
                 style="
-                  background-image: url('assets/images/ex-successful-5.jpg');
+                  background-image: url('assets/images/case-study/ex-successful-5.jpg');
                 "
               >
                 <div class="text text-center">
@@ -407,7 +519,7 @@
               <div
                 class="case img d-flex align-items-center justify-content-center"
                 style="
-                  background-image: url('assets/images/ex-successful-6.jpg');
+                  background-image: url('assets/images/case-study/ex-successful-4.jpg');
                 "
               >
                 <div class="text text-center">
@@ -422,7 +534,7 @@
               <div
                 class="case img d-flex align-items-center justify-content-center"
                 style="
-                  background-image: url('assets/images/ex-successful-6.jpg');
+                  background-image: url('assets/images/case-study/ex-successful-3.jpg');
                 "
               >
                 <div class="text text-center">
@@ -437,7 +549,7 @@
               <div
                 class="case img d-flex align-items-center justify-content-center"
                 style="
-                  background-image: url('assets/images/ex-successful-5.jpg');
+                  background-image: url('assets/images/case-study/ex-successful-2.jpg');
                 "
               >
                 <div class="text text-center">
@@ -452,7 +564,39 @@
               <div
                 class="case img d-flex align-items-center justify-content-center"
                 style="
-                  background-image: url('assets/images/ex-successful-4.jpg');
+                  background-image: url('assets/images/case-study/ex-successful-1.jpg');
+                "
+              >
+                <div class="text text-center">
+                  <h3>Legal Separation</h3>
+                  <span>Corporate</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- 12 -->
+          <div class="col-md-4 case-content">
+            <a href="case-study-article.html">
+              <div
+                class="case img d-flex align-items-center justify-content-center"
+                style="
+                  background-image: url('assets/images/case-study/ex-successful-1.jpg');
+                "
+              >
+                <div class="text text-center">
+                  <h3>Legal Separation</h3>
+                  <span>Corporate</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- 1-->
+          <div class="col-md-4 case-content">
+            <a href="case-study-article.html">
+              <div
+                class="case img d-flex align-items-center justify-content-center"
+                style="
+                  background-image: url('assets/images/case-study/ex-successful-2.jpg');
                 "
               >
                 <div class="text text-center">
@@ -467,7 +611,7 @@
               <div
                 class="case img d-flex align-items-center justify-content-center"
                 style="
-                  background-image: url('assets/images/ex-successful-3.jpg');
+                  background-image: url('assets/images/case-study/ex-successful-3.jpg');
                 "
               >
                 <div class="text text-center">
@@ -482,7 +626,7 @@
               <div
                 class="case img d-flex align-items-center justify-content-center"
                 style="
-                  background-image: url('assets/images/ex-successful-2.jpg');
+                  background-image: url('assets/images/case-study/ex-successful-4.jpg');
                 "
               >
                 <div class="text text-center">
@@ -497,7 +641,7 @@
               <div
                 class="case img d-flex align-items-center justify-content-center"
                 style="
-                  background-image: url('assets/images/ex-successful-1.jpg');
+                  background-image: url('assets/images/case-study/ex-successful-5.jpg');
                 "
               >
                 <div class="text text-center">
@@ -512,7 +656,7 @@
               <div
                 class="case img d-flex align-items-center justify-content-center"
                 style="
-                  background-image: url('assets/images/ex-successful-1.jpg');
+                  background-image: url('assets/images/case-study/ex-successful-6.jpg');
                 "
               >
                 <div class="text text-center">
@@ -527,7 +671,7 @@
               <div
                 class="case img d-flex align-items-center justify-content-center"
                 style="
-                  background-image: url('assets/images/ex-successful-2.jpg');
+                  background-image: url('assets/images/case-study/ex-successful-6.jpg');
                 "
               >
                 <div class="text text-center">
@@ -542,7 +686,7 @@
               <div
                 class="case img d-flex align-items-center justify-content-center"
                 style="
-                  background-image: url('assets/images/ex-successful-3.jpg');
+                  background-image: url('assets/images/case-study/ex-successful-5.jpg');
                 "
               >
                 <div class="text text-center">
@@ -557,7 +701,7 @@
               <div
                 class="case img d-flex align-items-center justify-content-center"
                 style="
-                  background-image: url('assets/images/ex-successful-4.jpg');
+                  background-image: url('assets/images/case-study/ex-successful-4.jpg');
                 "
               >
                 <div class="text text-center">
@@ -572,7 +716,7 @@
               <div
                 class="case img d-flex align-items-center justify-content-center"
                 style="
-                  background-image: url('assets/images/ex-successful-5.jpg');
+                  background-image: url('assets/images/case-study/ex-successful-3.jpg');
                 "
               >
                 <div class="text text-center">
@@ -587,7 +731,7 @@
               <div
                 class="case img d-flex align-items-center justify-content-center"
                 style="
-                  background-image: url('assets/images/ex-successful-6.jpg');
+                  background-image: url('assets/images/case-study/ex-successful-2.jpg');
                 "
               >
                 <div class="text text-center">
@@ -602,7 +746,39 @@
               <div
                 class="case img d-flex align-items-center justify-content-center"
                 style="
-                  background-image: url('assets/images/ex-successful-6.jpg');
+                  background-image: url('assets/images/case-study/ex-successful-1.jpg');
+                "
+              >
+                <div class="text text-center">
+                  <h3>Legal Separation</h3>
+                  <span>Corporate</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- 12 -->
+          <div class="col-md-4 case-content">
+            <a href="case-study-article.html">
+              <div
+                class="case img d-flex align-items-center justify-content-center"
+                style="
+                  background-image: url('assets/images/case-study/ex-successful-1.jpg');
+                "
+              >
+                <div class="text text-center">
+                  <h3>Legal Separation</h3>
+                  <span>Corporate</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- una-->
+          <div class="col-md-4 case-content">
+            <a href="case-study-article.html">
+              <div
+                class="case img d-flex align-items-center justify-content-center"
+                style="
+                  background-image: url('assets/images/case-study/ex-successful-2.jpg');
                 "
               >
                 <div class="text text-center">
@@ -617,7 +793,7 @@
               <div
                 class="case img d-flex align-items-center justify-content-center"
                 style="
-                  background-image: url('assets/images/ex-successful-5.jpg');
+                  background-image: url('assets/images/case-study/ex-successful-3.jpg');
                 "
               >
                 <div class="text text-center">
@@ -632,7 +808,7 @@
               <div
                 class="case img d-flex align-items-center justify-content-center"
                 style="
-                  background-image: url('assets/images/ex-successful-4.jpg');
+                  background-image: url('assets/images/case-study/ex-successful-4.jpg');
                 "
               >
                 <div class="text text-center">
@@ -647,7 +823,7 @@
               <div
                 class="case img d-flex align-items-center justify-content-center"
                 style="
-                  background-image: url('assets/images/ex-successful-3.jpg');
+                  background-image: url('assets/images/case-study/ex-successful-5.jpg');
                 "
               >
                 <div class="text text-center">
@@ -662,7 +838,7 @@
               <div
                 class="case img d-flex align-items-center justify-content-center"
                 style="
-                  background-image: url('assets/images/ex-successful-2.jpg');
+                  background-image: url('assets/images/case-study/ex-successful-6.jpg');
                 "
               >
                 <div class="text text-center">
@@ -677,7 +853,7 @@
               <div
                 class="case img d-flex align-items-center justify-content-center"
                 style="
-                  background-image: url('assets/images/ex-successful-1.jpg');
+                  background-image: url('assets/images/case-study/ex-successful-6.jpg');
                 "
               >
                 <div class="text text-center">
@@ -692,7 +868,7 @@
               <div
                 class="case img d-flex align-items-center justify-content-center"
                 style="
-                  background-image: url('assets/images/ex-successful-1.jpg');
+                  background-image: url('assets/images/case-study/ex-successful-5.jpg');
                 "
               >
                 <div class="text text-center">
@@ -707,7 +883,7 @@
               <div
                 class="case img d-flex align-items-center justify-content-center"
                 style="
-                  background-image: url('assets/images/ex-successful-2.jpg');
+                  background-image: url('assets/images/case-study/ex-successful-4.jpg');
                 "
               >
                 <div class="text text-center">
@@ -722,7 +898,7 @@
               <div
                 class="case img d-flex align-items-center justify-content-center"
                 style="
-                  background-image: url('assets/images/ex-successful-3.jpg');
+                  background-image: url('assets/images/case-study/ex-successful-3.jpg');
                 "
               >
                 <div class="text text-center">
@@ -737,7 +913,7 @@
               <div
                 class="case img d-flex align-items-center justify-content-center"
                 style="
-                  background-image: url('assets/images/ex-successful-4.jpg');
+                  background-image: url('assets/images/case-study/ex-successful-2.jpg');
                 "
               >
                 <div class="text text-center">
@@ -752,7 +928,7 @@
               <div
                 class="case img d-flex align-items-center justify-content-center"
                 style="
-                  background-image: url('assets/images/ex-successful-5.jpg');
+                  background-image: url('assets/images/case-study/ex-successful-1.jpg');
                 "
               >
                 <div class="text text-center">
@@ -762,111 +938,7 @@
               </div>
             </a>
           </div>
-          <div class="col-md-4 case-content">
-            <a href="case-study-article.html">
-              <div
-                class="case img d-flex align-items-center justify-content-center"
-                style="
-                  background-image: url('assets/images/ex-successful-6.jpg');
-                "
-              >
-                <div class="text text-center">
-                  <h3>Legal Separation</h3>
-                  <span>Corporate</span>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4 case-content">
-            <a href="case-study-article.html">
-              <div
-                class="case img d-flex align-items-center justify-content-center"
-                style="
-                  background-image: url('assets/images/ex-successful-6.jpg');
-                "
-              >
-                <div class="text text-center">
-                  <h3>Legal Separation</h3>
-                  <span>Corporate</span>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4 case-content">
-            <a href="case-study-article.html">
-              <div
-                class="case img d-flex align-items-center justify-content-center"
-                style="
-                  background-image: url('assets/images/ex-successful-5.jpg');
-                "
-              >
-                <div class="text text-center">
-                  <h3>Legal Separation</h3>
-                  <span>Corporate</span>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4 case-content">
-            <a href="case-study-article.html">
-              <div
-                class="case img d-flex align-items-center justify-content-center"
-                style="
-                  background-image: url('assets/images/ex-successful-4.jpg');
-                "
-              >
-                <div class="text text-center">
-                  <h3>Legal Separation</h3>
-                  <span>Corporate</span>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4 case-content">
-            <a href="case-study-article.html">
-              <div
-                class="case img d-flex align-items-center justify-content-center"
-                style="
-                  background-image: url('assets/images/ex-successful-3.jpg');
-                "
-              >
-                <div class="text text-center">
-                  <h3>Legal Separation</h3>
-                  <span>Corporate</span>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4 case-content">
-            <a href="case-study-article.html">
-              <div
-                class="case img d-flex align-items-center justify-content-center"
-                style="
-                  background-image: url('assets/images/ex-successful-2.jpg');
-                "
-              >
-                <div class="text text-center">
-                  <h3>Legal Separation</h3>
-                  <span>Corporate</span>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4 case-content">
-            <a href="case-study-article.html">
-              <div
-                class="case img d-flex align-items-center justify-content-center"
-                style="
-                  background-image: url('assets/images/ex-successful-1.jpg');
-                "
-              >
-                <div class="text text-center">
-                  <h3>Legal Separation</h3>
-                  <span>Corporate</span>
-                </div>
-              </div>
-            </a>
-          </div>
+          <!-- 12 -->
         </div>
         <div class="row mt-5">
           <div class="col text-center">
@@ -879,8 +951,8 @@
     </section>
     <!-- Case Study End -->
 
-     <!-- Footer -->
-     <footer class="footer bg-dark footer-section" id="contact">
+    <!-- Footer -->
+    <footer class="footer bg-dark footer-section" id="contact">
       <div class="container">
         <div class="row mb-0">
           <div class="col-md">
@@ -921,8 +993,7 @@
                   <a href="#"><i class="fab fa-instagram"></i></a>
                 </li>
               </ul>
-               <!-- Social Media End-->
-
+              <!-- Social Media End-->
             </div>
           </div>
 
@@ -932,43 +1003,21 @@
               <h2 class="heading-2 center mt-3 mb-5">Practice Areas</h2>
               <ul class="list-unstyled center">
                 <li>
-                  <a href="pa-article.html" class="py-1 d-block"
-                    ><i class="fas fa-chevron-right me-3 mb-2"></i> Lorem Law</a
+                  <a href="pa-article.html" class="d-block"
+                    ><i class="fas fa-chevron-right me-3 mb-2"></i> Land
+                    Titling/Transfer</a
                   >
                 </li>
                 <li>
                   <a href="pa-article.html" class="py-1 d-block"
-                    ><i class="fas fa-chevron-right me-3 mb-2"></i> Lorem Law</a
+                    ><i class="fas fa-chevron-right me-3 mb-2"></i> Land
+                    Use/Zoning</a
                   >
                 </li>
                 <li>
                   <a href="pa-article.html" class="py-1 d-block"
-                    ><i class="fas fa-chevron-right me-3 mb-2"></i> Lorem Law</a
-                  >
-                </li>
-                <li>
-                  <a href="pa-article.html" class="py-1 d-block"
-                    ><i class="fas fa-chevron-right me-3 mb-2"></i> Lorem Law</a
-                  >
-                </li>
-                <li>
-                  <a href="pa-article.html" class="py-1 d-block"
-                    ><i class="fas fa-chevron-right me-3 mb-2"></i> Lorem Law</a
-                  >
-                </li>
-                <li>
-                  <a href="pa-article.html" class="py-1 d-block"
-                    ><i class="fas fa-chevron-right me-3 mb-2"></i> Lorem Law</a
-                  >
-                </li>
-                <li>
-                  <a href="pa-article.html" class="py-1 d-block"
-                    ><i class="fas fa-chevron-right me-3 mb-2"></i> Lorem Law</a
-                  >
-                </li>
-                <li>
-                  <a href="pa-article.html" class="py-1 d-block"
-                    ><i class="fas fa-chevron-right me-3 mb-2"></i> Lorem Law</a
+                    ><i class="fas fa-chevron-right me-3 mb-2"></i> Real
+                    Estate</a
                   >
                 </li>
               </ul>
@@ -1018,7 +1067,7 @@
               </div>
             </div>
           </div>
-           <!-- Open Hours End -->
+          <!-- Open Hours End -->
         </div>
       </div>
     </footer>

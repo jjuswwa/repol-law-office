@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const elementsPerPage = 6; // Number of elements per page
+  const elementsPerPage = 6; 
   const caseContents = document.querySelectorAll(".case-content");
   const pagination = document.querySelector(".pagination");
 
