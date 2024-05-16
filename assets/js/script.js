@@ -20,16 +20,6 @@ window.addEventListener("scroll", function () {
   }
 });
 
-// Change color navbar toggle icon
-window.addEventListener("scroll", function () {
-  var navbarTogglerIcon = document.querySelector(".navbar-toggler-icon");
-  if (window.scrollY > 0) {
-    navbarTogglerIcon.classList.add("gold");
-  } else {
-    navbarTogglerIcon.classList.remove("gold");
-  }
-});
-
 // Navbar activation link(Mobile & Tablet)
 document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelectorAll(".nav-link");
@@ -147,3 +137,13 @@ document.addEventListener("DOMContentLoaded", function () {
 // const currentYear = new Date().getFullYear();
 // const yearsOfExperience = currentYear - startYear;
 // yearsSpan.textContent = yearsOfExperience;
+
+// Change color navbar toggle icon
+// window.addEventListener("scroll", function () {
+//   var navbarTogglerIcon = document.querySelector(".navbar-toggler-icon");
+//   if (window.scrollY > 0) {
+//     navbarTogglerIcon.classList.add("gold");
+//   } else {
+//     navbarTogglerIcon.classList.remove("gold");
+//   }
+// });
