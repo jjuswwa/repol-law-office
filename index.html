@@ -26,6 +26,9 @@
     <!-- Main CSS -->
     <link rel="stylesheet" href="assets/css/main.css" />
 
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="assets/css/animate.css" />
+
     <!-- Owl Carousel CSS -->
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
     <link
@@ -37,6 +40,16 @@
     />
   </head>
   <body>
+    <!-- Pre Loader -->
+    <div id="preloader" class="preloader">
+      <img
+        src="assets/images/preloader-logo.png"
+        alt="Loading..."
+        class="logo-loading"
+      />
+    </div>
+    <!-- Pre Loader End -->
+
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container">
@@ -46,6 +59,7 @@
             alt="Repol Law Office Logo"
             loading="lazy"
             width="250"
+            id="navbarLogo"
           />
         </a>
         <button
@@ -56,7 +70,7 @@
           aria-controls="offcanvasDarkNavbar"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-gold"></span>
         </button>
         <div
           class="offcanvas offcanvas-start text-bg-dark"
@@ -120,7 +134,7 @@
               </div>
             </div>
             <a
-              href="free-consultation.html"
+              href="https://www.facebook.com/landlimits"
               class="btn btn-brand mx-2"
               style="width: 145px"
               >Inquire Now</a
@@ -134,11 +148,11 @@
     <!-- Hero Section -->
     <section
       id="hero"
-      class="w-100 vh-100 d-flex justify-content-center align-items-center"
+      class="w-100 vh-100 justify-content-center align-items-center"
     >
       <div class="container">
         <div class="row">
-          <div class="col-12">
+          <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
             <h6
               class="col-md-6 text-uppercase"
               style="
@@ -151,14 +165,14 @@
             </h6>
             <h1 class="text-white">
               Providing Legal Expertise and Geodetic Solutions
-              <!-- <span class="typewriter-text"></span><span class="blink">|</span> -->
+              <span class="typewriter-text"></span><span class="blink">|</span>
             </h1>
             <p class="mb-4 text-light">
               Ensuring your land rights are protected with our legal and
               geodetic solutions.
             </p>
             <a
-              href="free-consultation.html"
+              href="https://www.facebook.com/landlimits"
               class="btn btn-brand me-2 fw-normal"
               style="width: 145px"
               >Inquire Now</a
@@ -173,7 +187,7 @@
     <section class="section py-5" id="about">
       <div class="container">
         <div class="row g-4">
-          <div class="col-lg-6">
+          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
             <div class="container-img">
               <img
                 src="assets/images/atty-jane-2.jpg"
@@ -187,7 +201,7 @@
               />
             </div>
           </div>
-          <div class="col-lg-6 py-md-5">
+          <div class="col-lg-6 py-md-5 wow fadeIn" data-wow-delay="0.3s">
             <div class="col-md-12 heading-section">
               <span class="subheading">About Us</span>
               <h2 class="display-5 mb-4 headline" style="width: 72%">
@@ -232,7 +246,10 @@
     <!-- Mision & Vision Section -->
     <section class="section" id="mission-vision">
       <div class="container text-center">
-        <div class="row justify-content-center">
+        <div
+          class="row justify-content-center wow fadeInUp"
+          data-wow-delay="0.2s"
+        >
           <div class="col-md-6">
             <div class="box">
               <div class="mission-icon" id="mission-icon">
@@ -276,13 +293,17 @@
         <div class="row">
           <div class="col-lg-3 py-5">
             <div class="heading-section">
-              <span class="subheading">Services</span>
-              <h2 class="mb-4 headline">Practice Areas</h2>
-              <p>
+              <span class="subheading wow fadeInLeft" data-wow-delay="0.1s"
+                >Services</span
+              >
+              <h2 class="mb-4 headline wow fadeInLeft" data-wow-delay="0.2s">
+                Practice Areas
+              </h2>
+              <p class="wow fadeInLeft" data-wow-delay="0.2s">
                 Discover our core practice areas, where we provide expert
                 guidance and support for all your land and property needs.
               </p>
-              <p>
+              <p class="wow fadeIn" data-wow-delay="0.4s">
                 <a
                   href="free-consultation.html
                 "
@@ -295,7 +316,10 @@
           </div>
           <div class="col-lg-9 services-wrap px-4 pt-5">
             <div class="row pt-md-6">
-              <div class="col-md-4 d-flex align-items-stretch">
+              <div
+                class="col-md-4 d-flex align-items-stretch wow fadeInUp"
+                data-wow-delay="0.2s"
+              >
                 <div class="services text-center">
                   <div
                     class="icon d-flex justify-content-center align-items-center"
@@ -322,7 +346,10 @@
                   </a>
                 </div>
               </div>
-              <div class="col-md-4 d-flex align-items-stretch">
+              <div
+                class="col-md-4 d-flex align-items-stretch wow fadeInUp"
+                data-wow-delay="0.3s"
+              >
                 <div class="services text-center">
                   <div
                     class="icon d-flex justify-content-center align-items-center"
@@ -349,7 +376,10 @@
                   >
                 </div>
               </div>
-              <div class="col-md-4 d-flex align-items-stretch">
+              <div
+                class="col-md-4 d-flex align-items-stretch wow fadeInUp"
+                data-wow-delay="0.4s"
+              >
                 <div class="services text-center">
                   <div
                     class="icon d-flex justify-content-center align-items-center"
@@ -387,13 +417,19 @@
     <section class="section" id="land-surveying">
       <div class="container px-md-5">
         <div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 text-center heading-section">
+          <div
+            class="col-md-7 text-center heading-section wow fadeInUp"
+            data-wow-delay="0.2s"
+          >
             <span class="subheading">Services</span>
             <h2 class="mb-4 headline">Land Surveying Services</h2>
           </div>
         </div>
         <div class="row g-4 justify-content-center">
-          <div class="col-lg-4 text-center image">
+          <div
+            class="col-lg-4 col-md-6 text-center image wow fadeInUp"
+            data-wow-delay="0.2s"
+          >
             <div class="land-surveying">
               <div
                 class="icon d-flex justify-content-center align-items-center"
@@ -412,14 +448,17 @@
               </p>
               <div class="hover-image">
                 <img
-                  src="assets/images/land-surveying/real-estate-1.jpg"
+                  src="assets/images/land-surveying/lot-plan-bg.jpg"
                   alt=""
                 />
                 <div class="image-overlay"></div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 text-center image">
+          <div
+            class="col-lg-4 col-md-6 text-center image wow fadeInUp"
+            data-wow-delay="0.3s"
+          >
             <div class="land-surveying">
               <div
                 class="icon d-flex justify-content-center align-items-center"
@@ -439,14 +478,17 @@
               </p>
               <div class="hover-image">
                 <img
-                  src="assets/images/land-surveying/real-estate-1.jpg"
+                  src="assets/images/land-surveying/relocation-bg.jpg"
                   alt=""
                 />
                 <div class="image-overlay"></div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 text-center image">
+          <div
+            class="col-lg-4 col-md-6 text-center image wow fadeInUp"
+            data-wow-delay="0.4s"
+          >
             <div class="land-surveying">
               <div
                 class="icon d-flex justify-content-center align-items-center"
@@ -466,14 +508,17 @@
               </p>
               <div class="hover-image">
                 <img
-                  src="assets/images/land-surveying/real-estate-1.jpg"
+                  src="assets/images/land-surveying/topographic-bg.jpg"
                   alt=""
                 />
                 <div class="image-overlay"></div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 text-center image">
+          <div
+            class="col-lg-4 col-md-6 text-center image wow fadeInUp"
+            data-wow-delay="0.2s"
+          >
             <div class="land-surveying">
               <div
                 class="icon d-flex justify-content-center align-items-center"
@@ -492,20 +537,23 @@
               </p>
               <div class="hover-image">
                 <img
-                  src="assets/images/land-surveying/real-estate-1.jpg"
+                  src="assets/images/land-surveying/subdivision-bg.jpg"
                   alt=""
                 />
                 <div class="image-overlay"></div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 text-center image">
+          <div
+            class="col-lg-4 col-md-6 text-center image wow fadeInUp"
+            data-wow-delay="0.3s"
+          >
             <div class="land-surveying">
               <div
                 class="icon d-flex justify-content-center align-items-center"
               >
                 <img
-                  src="assets/images/land-surveying/construction-site.png"
+                  src="assets/images/land-surveying/site-development.png"
                   alt="Site Development Plan"
                 />
               </div>
@@ -518,14 +566,17 @@
               </p>
               <div class="hover-image">
                 <img
-                  src="assets/images/land-surveying/real-estate-1.jpg"
+                  src="assets/images/land-surveying/site-development-bg.jpg"
                   alt=""
                 />
                 <div class="image-overlay"></div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 text-center image">
+          <div
+            class="col-lg-4 col-md-6 text-center image wow fadeInUp"
+            data-wow-delay="0.4s"
+          >
             <div class="land-surveying">
               <div
                 class="icon d-flex justify-content-center align-items-center"
@@ -542,14 +593,17 @@
               </p>
               <div class="hover-image">
                 <img
-                  src="assets/images/land-surveying/real-estate-1.jpg"
+                  src="assets/images/land-surveying/transfer-bg.jpg"
                   alt=""
                 />
                 <div class="image-overlay"></div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 text-center image">
+          <div
+            class="col-lg-4 col-md-6 text-center image wow fadeInUp"
+            data-wow-delay="0.2s"
+          >
             <div class="land-surveying">
               <div
                 class="icon d-flex justify-content-center align-items-center"
@@ -567,15 +621,15 @@
                 flourish.
               </p>
               <div class="hover-image">
-                <img
-                  src="assets/images/land-surveying/real-estate-1.jpg"
-                  alt=""
-                />
+                <img src="assets/images/land-surveying/aerial-bg.jpg" alt="" />
                 <div class="image-overlay"></div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 text-center image">
+          <div
+            class="col-lg-4 col-md-6 text-center image wow fadeInUp"
+            data-wow-delay="0.3s"
+          >
             <div class="land-surveying">
               <div
                 class="icon d-flex justify-content-center align-items-center"
@@ -594,20 +648,23 @@
               </p>
               <div class="hover-image">
                 <img
-                  src="assets/images/land-surveying/real-estate-1.jpg"
+                  src="assets/images/land-surveying/geodetic-bg.jpg"
                   alt=""
                 />
                 <div class="image-overlay"></div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 text-center image">
+          <div
+            class="col-lg-4 col-md-6 text-center image wow fadeInUp"
+            data-wow-delay="0.4s"
+          >
             <div class="land-surveying">
               <div
                 class="icon d-flex justify-content-center align-items-center"
               >
                 <img
-                  src="assets/images/land-surveying/construction.png"
+                  src="assets/images/land-surveying/Construction.png"
                   alt="Construction Survey"
                 />
               </div>
@@ -620,14 +677,17 @@
               </p>
               <div class="hover-image">
                 <img
-                  src="assets/images/land-surveying/real-estate-1.jpg"
+                  src="assets/images/land-surveying/construction-bg.jpg"
                   alt=""
                 />
                 <div class="image-overlay"></div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 text-center image">
+          <div
+            class="col-lg-4 col-md-6 text-center image wow fadeInUp"
+            data-wow-delay="0.2s"
+          >
             <div class="land-surveying">
               <div
                 class="icon d-flex justify-content-center align-items-center"
@@ -643,15 +703,15 @@
                 accelerometer to compensate for the effects of vehicle movement.
               </p>
               <div class="hover-image">
-                <img
-                  src="assets/images/land-surveying/real-estate-1.jpg"
-                  alt=""
-                />
+                <img src="assets/images/land-surveying/road-bg.jpg" alt="" />
                 <div class="image-overlay"></div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 text-center image">
+          <div
+            class="col-lg-4 col-md-6 text-center image wow fadeInUp"
+            data-wow-delay="0.3s"
+          >
             <div class="land-surveying">
               <div
                 class="icon d-flex justify-content-center align-items-center"
@@ -668,14 +728,17 @@
               </p>
               <div class="hover-image">
                 <img
-                  src="assets/images/land-surveying/real-estate-1.jpg"
+                  src="assets/images/land-surveying/parcellary-bg.jpg"
                   alt=""
                 />
                 <div class="image-overlay"></div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 text-center image">
+          <div
+            class="col-lg-4 col-md-6 text-center image wow fadeInUp"
+            data-wow-delay="0.4s"
+          >
             <div class="land-surveying">
               <div
                 class="icon d-flex justify-content-center align-items-center"
@@ -693,7 +756,7 @@
               </p>
               <div class="hover-image">
                 <img
-                  src="assets/images/land-surveying/real-estate-1.jpg"
+                  src="assets/images/land-surveying/verification-bg.jpg"
                   alt=""
                 />
                 <div class="image-overlay"></div>
@@ -709,14 +772,17 @@
     <section class="section bg-light" id="team">
       <div class="container-fluid px-md-5">
         <div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 text-center heading-section">
+          <div
+            class="col-md-7 text-center heading-section wow fadeInUp"
+            data-wow-delay="0.2s"
+          >
             <span class="subheading">get to know us</span>
 
             <h2 class="mb-4 headline">meet our team</h2>
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-3 col-sm-6">
+          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
             <div class="box-flipper">
               <div class="flipper">
                 <div
@@ -761,7 +827,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-sm-6">
+          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
             <div class="box-flipper">
               <div class="flipper">
                 <div
@@ -808,7 +874,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-sm-6">
+          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
             <div class="box-flipper">
               <div class="flipper">
                 <div
@@ -853,7 +919,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-sm-6">
+          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
             <div class="box-flipper">
               <div class="flipper">
                 <div
@@ -903,105 +969,156 @@
     </section>
     <!--Our Team Section End -->
 
-    <!-- Case Study carousel-->
-    <!-- <section class="section">
-      <div class="container">
-        <div class="row justify-content-center mb-5">
-          <div class="col-md-10 text-center heading-section">
-            <span class="subheading">Explore Case Studies</span>
-            <h2 class="mb-4 headline">(N)Completed Cases Successfully</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="owl-carousel own-theme">
-              <div class="item">
-                <a href="case-study-article.html">
-                  <div
-                    class="case img d-flex align-items-center justify-content-center"
-                    style="
-                      background-image: url('assets/images/case-study/ex-successful-1.jpg');
-                    "
-                  >
-                    <div class="text text-center">
-                      <h3>Lorem ipsum</h3>
-                      <span>lorem</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="item">
-                <a href="case-study-article.html">
-                  <div
-                    class="case img d-flex align-items-center justify-content-center"
-                    style="
-                      background-image: url('assets/images/case-study/ex-successful-2.jpg');
-                    "
-                  >
-                    <div class="text text-center">
-                      <h3>Lorem ipsum</h3>
-                      <span>lorem</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="item">
-                <a href="case-study-article.html">
-                  <div
-                    class="case img d-flex align-items-center justify-content-center"
-                    style="
-                      background-image: url('assets/images/case-study/ex-successful-3.jpg');
-                    "
-                  >
-                    <div class="text text-center">
-                      <h3>Lorem ipsum</h3>
-                      <span>lorem</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="item">
-                <a href="case-study-article.html">
-                  <div
-                    class="case img d-flex align-items-center justify-content-center"
-                    style="
-                      background-image: url('assets/images/case-study/ex-successful-4.jpg');
-                    "
-                  >
-                    <div class="text text-center">
-                      <h3>Lorem ipsum</h3>
-                      <span>lorem</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-12 text-center mt-4">
-            <a href="case-study.html" class="btn btn-brand px-5"
-              >See All Successful Cases</a
-            >
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- Case Study End -->
-
     <!-- Case Study -->
     <section class="section">
       <div class="container">
         <div class="row justify-content-center mb-5">
-          <div class="col-md-10 text-center heading-section">
+          <div
+            class="col-md-10 text-center heading-section wow fadeInUp"
+            data-wow-delay="0.2s"
+          >
             <span class="subheading">Cases and project</span>
             <h2 class="mb-4 headline">See our recent activities</h2>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-12">
-            <!-- not final -->
+          <div class="col-md-12 wow fadeIn" data-wow-delay="0.3s">
             <div class="gallery">
               <div class="grid-wrapper">
-                <div class="img">
+                <a href="case-study-article.html" class="case img">
+                  <div>
+                    <img
+                      src="assets/images/case-study/ex-successful-1.jpg"
+                      alt=""
+                    />
+                    <div class="text text-center">
+                      <h3>Legal Separation</h3>
+                      <span>Corporate</span>
+                    </div>
+                  </div>
+                </a>
+                <a href="case-study-article.html" class="case img">
+                  <img
+                    src="assets/images/case-study/ex-successful-2.jpg"
+                    alt=""
+                  />
+                  <div class="text text-center">
+                    <h3>Legal Separation</h3>
+                    <span>Corporate</span>
+                  </div>
+                </a>
+                <a href="case-study-article.html" class="case img">
+                  <img
+                    src="assets/images/case-study/ex-successful-3.jpg"
+                    alt=""
+                  />
+                  <div class="text text-center">
+                    <h3>Legal Separation</h3>
+                    <span>Corporate</span>
+                  </div>
+                </a>
+                <a href="case-study-article.html" class="case img">
+                  <img
+                    src="assets/images/case-study/ex-successful-4.jpg"
+                    alt=""
+                  />
+                  <div class="text text-center">
+                    <h3>Legal Separation</h3>
+                    <span>Corporate</span>
+                  </div>
+                </a>
+                <a href="case-study-article.html" class="case img">
+                  <img
+                    src="assets/images/case-study/ex-successful-5.jpg"
+                    alt=""
+                  />
+                  <div class="text text-center">
+                    <h3>Legal Separation</h3>
+                    <span>Corporate</span>
+                  </div>
+                </a>
+                <a href="case-study-article.html" class="case img">
+                  <img
+                    src="assets/images/case-study/ex-successful-6.jpg"
+                    alt=""
+                  />
+                  <div class="text text-center">
+                    <h3>Legal Separation</h3>
+                    <span>Corporate</span>
+                  </div>
+                </a>
+                <a href="case-study-article.html" class="case img">
+                  <img
+                    src="assets/images/case-study/ex-successful-1.jpg"
+                    alt=""
+                  />
+                  <div class="text text-center">
+                    <h3>Legal Separation</h3>
+                    <span>Corporate</span>
+                  </div>
+                </a>
+                <a href="case-study-article.html" class="case img">
+                  <img
+                    src="assets/images/case-study/ex-successful-2.jpg"
+                    alt=""
+                  />
+                  <div class="text text-center">
+                    <h3>Legal Separation</h3>
+                    <span>Corporate</span>
+                  </div>
+                </a>
+                <a href="case-study-article.html" class="case img">
+                  <img
+                    src="assets/images/case-study/ex-successful-3.jpg"
+                    alt=""
+                  />
+                  <div class="text text-center">
+                    <h3>Legal Separation</h3>
+                    <span>Corporate</span>
+                  </div>
+                </a>
+                <a href="case-study-article.html" class="case img">
+                  <img
+                    src="assets/images/case-study/ex-successful-4.jpg"
+                    alt=""
+                  />
+                  <div class="text text-center">
+                    <h3>Legal Separation</h3>
+                    <span>Corporate</span>
+                  </div>
+                </a>
+                <a href="case-study-article.html" class="case img">
+                  <img
+                    src="assets/images/case-study/ex-successful-5.jpg"
+                    alt=""
+                  />
+                  <div class="text text-center">
+                    <h3>Legal Separation</h3>
+                    <span>Corporate</span>
+                  </div>
+                </a>
+                <a href="case-study-article.html" class="case img">
+                  <img
+                    src="assets/images/case-study/ex-successful-6.jpg"
+                    alt=""
+                  />
+                  <div class="text text-center">
+                    <h3>Legal Separation</h3>
+                    <span>Corporate</span>
+                  </div>
+                </a>
+                <a href="case-study-article.html" class="case img">
+                  <img
+                    src="assets/images/case-study/ex-successful-1.jpg"
+                    alt=""
+                  />
+                  <div class="text text-center" class="case img">
+                    <h3>Legal Separation</h3>
+                    <span>Corporate</span>
+                  </div>
+                </a>
+
+                <!-- <div class="img">
                   <a href="case-study-article.html">
                     <img
                       src="assets/images/case-study/ex-successful-1.jpg"
@@ -1048,107 +1165,14 @@
                       alt=""
                     />
                   </a>
-                </div>
-                <div class="img">
-                  <a href="case-study-article.html">
-                    <img
-                      src="assets/images/case-study/ex-successful-1.jpg"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <div class="img">
-                  <a href="case-study-article.html">
-                    <img
-                      src="assets/images/case-study/ex-successful-2.jpg"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <div class="img">
-                  <a href="case-study-article.html">
-                    <img
-                      src="assets/images/case-study/ex-successful-3.jpg"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <div class="img">
-                  <a href="case-study-article.html">
-                    <img
-                      src="assets/images/case-study/ex-successful-4.jpg"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <div class="img">
-                  <a href="case-study-article.html">
-                    <img
-                      src="assets/images/case-study/ex-successful-5.jpg"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <div class="img">
-                  <a href="case-study-article.html">
-                    <img
-                      src="assets/images/case-study/ex-successful-6.jpg"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <div class="img">
-                  <a href="case-study-article.html">
-                    <img
-                      src="assets/images/case-study/ex-successful-1.jpg"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <div class="img">
-                  <a href="case-study-article.html">
-                    <img
-                      src="assets/images/case-study/ex-successful-2.jpg"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <div class="img">
-                  <a href="case-study-article.html">
-                    <img
-                      src="assets/images/case-study/ex-successful-3.jpg"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <div class="img">
-                  <a href="case-study-article.html">
-                    <img
-                      src="assets/images/case-study/ex-successful-4.jpg"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <div class="img">
-                  <a href="case-study-article.html">
-                    <img
-                      src="assets/images/case-study/ex-successful-5.jpg"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <div class="img">
-                  <a href="case-study-article.html">
-                    <img
-                      src="assets/images/case-study/ex-successful-6.jpg"
-                      alt=""
-                    />
-                  </a>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
-          <div class="col-md-12 text-center mt-4">
+          <div
+            class="col-md-12 text-center mt-4 wow fadeIn"
+            data-wow-delay="0.3s"
+          >
             <a href="case-study.html" class="btn btn-brand px-5"
               >See All Successful Cases</a
             >
@@ -1162,13 +1186,16 @@
     <section class="section bg-light">
       <div class="container">
         <div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section text-center">
+          <div
+            class="col-md-7 heading-section text-center wow fadeInUp"
+            data-wow-delay="0.2s"
+          >
             <span class="subheading">Our Blog</span>
             <h2 class="headline">Recent Blog</h2>
           </div>
         </div>
         <div class="row d-flex">
-          <div class="col-md-4 d-flex">
+          <div class="col-md-4 d-flex wow fadeInUp" data-wow-delay="0.2s">
             <div class="blog-entry justify-content-end">
               <a
                 href="blog-article.html"
@@ -1208,7 +1235,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 d-flex">
+          <div class="col-md-4 d-flex wow fadeInUp" data-wow-delay="0.3s">
             <div class="blog-entry justify-content-end">
               <a
                 href="blog-article.html"
@@ -1248,7 +1275,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 d-flex">
+          <div class="col-md-4 d-flex wow fadeInUp" data-wow-delay="0.4s">
             <div class="blog-entry justify-content-end">
               <a
                 href="blog-article.html"
@@ -1300,11 +1327,14 @@
     <section class="section no-pb" id="client">
       <div class="container">
         <div class="row justify-content-center mb-5">
-          <div class="col-md-7 heading-section text-center">
+          <div
+            class="col-md-7 heading-section text-center wow fadeInUp"
+            data-wow-delay="0.2s"
+          >
             <span class="subheading">Our valued clients</span>
             <h2 class="headline">clients who trusted our expertise</h2>
           </div>
-          <div class="slider">
+          <div class="slider wow fadeIn" data-wow-delay="0.3s">
             <div class="slider-track">
               <div class="slide">
                 <img
@@ -1462,13 +1492,16 @@
     <section class="section bg-light" id="testimonial">
       <div class="container">
         <div class="row justify-content-center mb-3">
-          <div class="col-md-7 text-center heading-section">
+          <div
+            class="col-md-7 text-center heading-section wow fadeInUp"
+            data-wow-delay="0.2s"
+          >
             <span class="subheading">hear it from them</span>
             <h2 class="mb-4 headline">Client testimonials</h2>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-12 wow fadeInUp" data-wow-delay="0.2s">
             <div class="testimonial-carousel owl-carousel own-theme">
               <div class="item">
                 <div class="testimony-wrap py-4">
@@ -1578,8 +1611,12 @@
     <!-- Testimonial Section End -->
 
     <!-- Footer -->
-    <footer class="footer footer-section" id="contact">
-      <div class="container">
+    <footer
+      class="footer footer-section wow fadeIn"
+      data-wow-delay="0.4s"
+      id="contact"
+    >
+      <div class="footer-container">
         <div class="row mb-0">
           <div class="col-md">
             <div class="footer-widget mb-4">
@@ -1625,7 +1662,7 @@
 
           <!-- Practice Area -->
           <div class="col-md">
-            <div class="footer-widget">
+            <div class="footer-widget" style="width: 90%">
               <h2 class="heading-2 center mt-4 mb-5">Practice Areas</h2>
               <ul
                 class="list-unstyled center"
@@ -1656,7 +1693,7 @@
 
           <!-- Contact Details -->
           <div class="col-md">
-            <div class="footer-widget mb-4">
+            <div class="footer-widget" style="width: 320px">
               <h2 class="heading-2 mt-4 mb-5">Talk to Us</h2>
               <div
                 class="information mb-3"
@@ -1665,17 +1702,20 @@
                 <ul>
                   <li>
                     <i class="fas fa-phone"></i>
-                    <span class="text">+63 123456789</span>
+                    <span class="text">+63 917-871-3035</span>
                   </li>
-                  <li>
-                    <i class="fas fa-envelope"></i>
-                    <span class="text">info@yourdomain.com</span>
-                  </li>
+
                   <li>
                     <i class="fas fa-map-marker-alt"></i>
                     <span class="text"
                       >2nd Floor JMCC Bldg. 41 Jubilation Commercial Strip,
                       Brgy. Zapote, Biñan, Laguna</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-envelope"></i>
+                    <a href="" class="text hover">
+                      landlimits.surveying@gmail.com</a
                     >
                   </li>
                 </ul>
@@ -1757,6 +1797,49 @@
             },
           },
         });
+      });
+    </script>
+
+    <!-- WOW JS -->
+    <script src="assets/js/wow.min.js"></script>
+    <script>
+      // Pre Loader
+      document.addEventListener("DOMContentLoaded", function () {
+        var preloader = document.getElementById("preloader");
+        var sections = document.querySelectorAll("section");
+        var nav = document.querySelector("nav");
+        var footer = document.querySelector("footer");
+
+        sections.forEach(function (section) {
+          section.style.display = "none";
+        });
+
+        nav.style.display = "none";
+        footer.style.display = "none";
+
+        function showHomePage() {
+          preloader.style.display = "none";
+          sections.forEach(function (section) {
+            section.style.display = "flex";
+          });
+
+          nav.style.display = "flex";
+          footer.style.display = "flex";
+
+          // WOW JS animation
+          new WOW().init();
+
+          // Scroll to the section on previous URL visit
+          var fragment = window.location.hash.substr(1);
+          if (fragment) {
+            var targetSection = document.getElementById(fragment);
+            if (targetSection) {
+              targetSection.scrollIntoView({ behavior: "smooth" });
+            }
+          }
+        }
+
+        setTimeout(showHomePage, 2000);
       });
     </script>
   </body>

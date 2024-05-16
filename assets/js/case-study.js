@@ -51,12 +51,12 @@ document.addEventListener("DOMContentLoaded", function () {
     if (totalPages > 1) {
       html += `<li class="page-item first-page ${
         currentPage === 1 ? "disabled" : ""
-      }"><a class="page-link" href="#" data-page="1">&lt;&lt;</a></li>`;
+      }"><a class="page-link" href="#" data-page="1"><i class="fas fa-angle-double-left"></i></a></li>`;
       html += `<li class="page-item previous-page ${
         currentPage === 1 ? "disabled" : ""
       }"><a class="page-link" href="#" data-page="${
         currentPage - 1
-      }">&lt;</a></li>`;
+      }"><i class="fas fa-angle-left"></i></a></li>`;
 
       // Display page numbers dynamically
       let startPage = 1;
@@ -82,10 +82,10 @@ document.addEventListener("DOMContentLoaded", function () {
         currentPage === totalPages ? "disabled" : ""
       }"><a class="page-link" href="#" data-page="${
         currentPage + 1
-      }">&gt;</a></li>`;
+      }"><i class="fas fa-angle-right"></i></a></li>`;
       html += `<li class="page-item last-page ${
         currentPage === totalPages ? "disabled" : ""
-      }"><a class="page-link" href="#" data-page="${totalPages}">&gt;&gt;</a></li>`;
+      }"><a class="page-link" href="#" data-page="${totalPages}"><i class="fas fa-angle-double-right"></i></a></li>`;
     }
     return html;
   }

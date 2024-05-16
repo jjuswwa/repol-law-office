@@ -26,6 +26,9 @@
     <!-- Main CSS -->
     <link rel="stylesheet" href="assets/css/main.css" />
 
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="assets/css/animate.css" />
+
     <!-- Owl Carousel CSS -->
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
     <link
@@ -106,13 +109,18 @@
         margin-left: auto;
         width: 50%;
       }
+
       .atty-details .description {
         position: absolute;
         order: 1;
         border-radius: 10px;
-        bottom: 30px;
-        width: 46%;
-        padding: 40px;
+        top: 100px;
+        left: 100px;
+        bottom: 20px;
+        width: 47%;
+        padding-top: 30px;
+        padding-left: 40px;
+        padding-right: 40px;
         background: rgba(14, 36, 51, 0.9);
         color: #fff;
       }
@@ -156,11 +164,11 @@
           order: 2;
           padding: 10px;
           margin: 20px auto;
+          left: 0;
           top: 10px;
           border-radius: 0;
           background: none;
         }
-
         .atty-details .description h2 {
           font-size: 28px;
         }
@@ -202,10 +210,13 @@
       .atty-details .description-right {
         position: absolute;
         border-radius: 10px;
-        bottom: 30px;
+        top: 100px;
+        bottom: 20px;
         left: 680px;
-        width: 46%;
-        padding: 40px;
+        width: 47%;
+        padding-top: 30px;
+        padding-left: 40px;
+        padding-right: 40px;
         background: rgba(14, 36, 51, 0.9);
         color: #fff;
       }
@@ -292,16 +303,6 @@
         margin-left: auto;
         width: 50%;
       }
-      .atty-details .description {
-        position: absolute;
-        order: 1;
-        border-radius: 10px;
-        bottom: 30px;
-        width: 46%;
-        padding: 40px;
-        background: rgba(14, 36, 51, 0.9);
-        color: #fff;
-      }
 
       .atty-details .description h2,
       .atty-details .description span {
@@ -336,17 +337,6 @@
           margin: 0 auto;
         }
 
-        .atty-details .description {
-          position: relative;
-          width: 100%;
-          order: 2;
-          padding: 10px;
-          margin: 20px auto;
-          top: 10px;
-          border-radius: 0;
-          background: none;
-        }
-
         .atty-details .description h2 {
           font-size: 28px;
         }
@@ -357,7 +347,6 @@
           margin-top: 15px;
         }
       }
-
       /* Team 3 End */
 
       /* Team 4  */
@@ -377,23 +366,6 @@
       .atty-details {
         display: flex;
         flex-direction: row;
-      }
-      .atty-details .atty-2-left {
-        position: relative;
-        top: 28px;
-        right: 550px;
-        margin-left: auto;
-        width: 50%;
-      }
-      .atty-details .description-right {
-        position: absolute;
-        border-radius: 10px;
-        bottom: 30px;
-        left: 680px;
-        width: 46%;
-        padding: 40px;
-        background: rgba(14, 36, 51, 0.9);
-        color: #fff;
       }
 
       .atty-details .description-right h2,
@@ -464,6 +436,7 @@
             alt="Repol Law Office Logo"
             loading="lazy"
             width="250"
+            id="navbarLogo"
           />
         </a>
         <button
@@ -474,7 +447,7 @@
           aria-controls="offcanvasDarkNavbar"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-gold"></span>
         </button>
         <div
           class="offcanvas offcanvas-start text-bg-dark"
@@ -544,7 +517,7 @@
               </div>
             </div>
             <a
-              href="free-consultation.html"
+              href="https://www.facebook.com/landlimits"
               class="btn btn-brand mx-2"
               style="width: 145px"
               >Inquire Now</a
@@ -567,11 +540,12 @@
           <div class="col-lg-12">
             <div class="atty-details">
               <img
-                src="assets/images/ex-attorney-bg-1.png"
+                src="assets/images/our-team/ex-attorney-bg-1.png"
                 alt=""
-                class="atty-1"
+                class="atty-1 wow fadeIn"
+                data-wow-delay="0.2s"
               />
-              <div class="description">
+              <div class="description wow fadeInLeft" data-wow-delay="0.2s">
                 <h2>Team 1</h2>
                 <span>Laywer</span>
                 <p>
@@ -603,7 +577,7 @@
     <!-- Team 1 End -->
 
     <!-- Team 2 -->
-    <section class="section" id="team-2" >
+    <section class="section" id="team-2">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -614,11 +588,15 @@
           <div class="col-lg-12">
             <div class="atty-details">
               <img
-                src="assets/images/ex-attorney-bg-2.png"
+                src="assets/images/our-team/ex-attorney-bg-2.png"
                 alt=""
-                class="atty-2-left"
+                class="atty-2-left wow fadeIn"
+                data-wow-delay="0.2s"
               />
-              <div class="description-right">
+              <div
+                class="description-right wow fadeInRight"
+                data-wow-delay="0.2s"
+              >
                 <h2>Team 2</h2>
                 <span>Laywer</span>
                 <p>
@@ -661,11 +639,12 @@
           <div class="col-lg-12">
             <div class="atty-details">
               <img
-                src="assets/images/ex-attorney-bg-3.png"
+                src="assets/images/our-team/ex-attorney-bg-3.png"
                 alt=""
-                class="atty-3"
+                class="atty-3 wow fadeIn"
+                data-wow-delay="0.2s"
               />
-              <div class="description">
+              <div class="description wow fadeInLeft" data-wow-delay="0.2s">
                 <h2>Team 3</h2>
                 <span>Laywer</span>
                 <p>
@@ -709,11 +688,15 @@
           <div class="col-lg-12">
             <div class="atty-details">
               <img
-                src="assets/images/ex-attorney-bg-4.png"
+                src="assets/images/our-team/ex-attorney-bg-4.png"
                 alt=""
-                class="atty-2-left"
+                class="atty-2-left wow fadeIn"
+                data-wow-delay="0.2s"
               />
-              <div class="description-right">
+              <div
+                class="description-right wow fadeInRight"
+                data-wow-delay="0.2s"
+              >
                 <h2>Team 4</h2>
                 <span>Laywer</span>
                 <p>
@@ -742,11 +725,15 @@
         </div>
       </div>
     </section>
-    <!-- Team 5 End -->
+    <!-- Team 4 End -->
 
     <!-- Footer -->
-    <footer class="footer bg-dark footer-section" id="contact">
-      <div class="container">
+    <footer
+      class="footer footer-section wow fadeInUp"
+      data-wow-delay="0.4s"
+      id="contact"
+    >
+      <div class="footer-container">
         <div class="row mb-0">
           <div class="col-md">
             <div class="footer-widget mb-4">
@@ -755,7 +742,7 @@
                   src="assets/images/repol-law-office-logo.png"
                   alt="Repol Law Office Logo"
                   loading="lazy"
-                  class="mt-3 mb-4"
+                  class="mt-3 mb-2"
                 />
               </a>
               <!-- Map Repol -->
@@ -792,9 +779,12 @@
 
           <!-- Practice Area -->
           <div class="col-md">
-            <div class="footer-widget">
-              <h2 class="heading-2 center mt-3 mb-5">Practice Areas</h2>
-              <ul class="list-unstyled center">
+            <div class="footer-widget" style="width: 90%">
+              <h2 class="heading-2 center mt-4 mb-5">Practice Areas</h2>
+              <ul
+                class="list-unstyled center"
+                style="font-family: var(--font-description)"
+              >
                 <li>
                   <a href="pa-article.html" class="d-block"
                     ><i class="fas fa-chevron-right me-3 mb-2"></i> Land
@@ -820,21 +810,30 @@
 
           <!-- Contact Details -->
           <div class="col-md">
-            <div class="footer-widget mb-4">
-              <h2 class="heading-2 mt-3 mb-5">Have a Questions?</h2>
-              <div class="information mb-3">
+            <div class="footer-widget" style="width: 320px">
+              <h2 class="heading-2 mt-4 mb-5">Talk to Us</h2>
+              <div
+                class="information mb-3"
+                style="font-family: var(--font-description)"
+              >
                 <ul>
                   <li>
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span class="text">Binan Laguna</span>z
-                  </li>
-                  <li>
                     <i class="fas fa-phone"></i>
-                    <span class="text">+63 123456789</span>
+                    <span class="text">+63 917-871-3035</span>
+                  </li>
+
+                  <li>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span class="text"
+                      >2nd Floor JMCC Bldg. 41 Jubilation Commercial Strip,
+                      Brgy. Zapote, Biñan, Laguna</span
+                    >
                   </li>
                   <li>
                     <i class="fas fa-envelope"></i>
-                    <span class="text">info@yourdomain.com</span>
+                    <a href="" class="text hover">
+                      landlimits.surveying@gmail.com</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -845,8 +844,11 @@
           <!-- Open Hours -->
           <div class="col-md">
             <div class="footer-widget mb-4">
-              <h2 class="heading-2 mt-3 mb-5">Business Hours</h2>
-              <div class="opening-hours">
+              <h2 class="heading-2 mt-4 mb-5">Business Hours</h2>
+              <div
+                class="opening-hours"
+                style="font-family: var(--font-description)"
+              >
                 <h4>Opening Days:</h4>
                 <p class="ps-3">
                   <span>Monday – Friday : NN to NN</span>
@@ -893,5 +895,11 @@
 
     <!-- Owl Carousel JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- WOW JS -->
+    <script src="assets/js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>

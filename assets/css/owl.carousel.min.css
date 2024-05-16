@@ -68,7 +68,7 @@
 }
 .owl-carousel .owl-nav button.owl-next,
 .owl-carousel .owl-nav button.owl-prev {
-  display: flex;
+  display: none;
 }
 .owl-carousel button.owl-dot {
   background: 0 0;
