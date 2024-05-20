@@ -45,10 +45,10 @@
         padding-bottom: 26px;
       }
 
-      @media (max-width: 768px) {
+      @media (max-width: 992px) {
         .section {
           padding: 4em 0;
-          padding-bottom: 0 !important;
+          padding-bottom: 20px !important;
         }
       }
 
@@ -84,13 +84,14 @@
         }
       }
 
+      @media screen and (max-width: 1200px) {
+        #navbarLogo {
+          content: url("assets/images/repol-law-office-scroll.png");
+        }
+      }
       /* Team 1 */
       .background .img-bg-1 {
         position: absolute;
-        background: linear-gradient(
-          rgba(8, 8, 62, 0.336),
-          rgba(8, 8, 62, 0.486)
-        );
         background-position: center;
         background-size: cover;
         width: 100%;
@@ -98,21 +99,25 @@
         top: 0;
         left: 0;
       }
-      .atty-details {
+
+      .job-description {
         display: flex;
         flex-direction: row;
+        
       }
-      .atty-details .atty-1 {
+
+      .job-description .profile-img {
         position: relative;
-        top: 28px;
-        order: 2;
+        top: 25px;
+        order: 1;
         margin-left: auto;
+        left: 50px;
         width: 50%;
       }
 
-      .atty-details .description {
+      .job-description .description {
         position: absolute;
-        order: 1;
+        order: 2;
         border-radius: 10px;
         top: 100px;
         left: 100px;
@@ -125,43 +130,42 @@
         color: #fff;
       }
 
-      .atty-details .description h2,
-      .atty-details .description span {
+      .job-description .description h2,
+      .job-description .description span {
         margin-bottom: -5px;
         margin-top: 0;
         padding: auto;
         color: #cdba6d;
       }
 
-      .atty-details .description p {
+      .job-description .description p {
         color: #fff;
         margin-bottom: -5px;
         margin-top: 20px;
         line-height: 25px;
       }
-
-      @media only screen and (max-width: 768px) {
+      @media (max-width: 1110px) {
         .img-bg-1 {
           display: none;
         }
 
-        .atty-details {
+        .job-description {
           flex-direction: column;
           position: relative;
           top: 20px;
         }
 
-        .atty-details .atty-1 {
+        .job-description .profile-img {
           background-image: url("assets/images/ex-bg-2.jpeg");
           order: 1;
           width: 100%;
+          left: auto;
           margin: 0 auto;
         }
 
-        .atty-details .description {
+        .job-description .description {
           position: relative;
           width: 100%;
-          order: 2;
           padding: 10px;
           margin: 20px auto;
           left: 0;
@@ -169,26 +173,22 @@
           border-radius: 0;
           background: none;
         }
-        .atty-details .description h2 {
-          font-size: 28px;
+        .job-description .description h2 {
+          font-size: 28px !important;
         }
 
-        .atty-details .description p {
-          font-size: 18px;
+        .job-description .description p {
+          font-size: 18px !important;
           color: #000;
           margin-top: 15px;
+          font-weight: 300;
         }
       }
-
       /* Team 1 End */
 
-      /* Team 2  */
+      /* Team 2 */
       .background-2 .img-bg-2 {
         position: absolute;
-        background: linear-gradient(
-          rgba(8, 8, 62, 0.336),
-          rgba(8, 8, 62, 0.486)
-        );
         background-position: center;
         background-size: cover;
         width: 100%;
@@ -196,57 +196,48 @@
         top: 0;
         left: 0;
       }
-      .atty-details {
-        display: flex;
-        flex-direction: row;
-      }
-      .atty-details .atty-2-left {
+
+      .job-description .profile-img-left {
         position: relative;
         top: 28px;
-        right: 550px;
-        margin-left: auto;
         width: 50%;
+        float: left;
+        
       }
-      .atty-details .description-right {
+
+      .job-description .description-right {
         position: absolute;
         border-radius: 10px;
         top: 100px;
+        right: 50px;
         bottom: 20px;
-        left: 680px;
         width: 47%;
-        padding-top: 30px;
-        padding-left: 40px;
-        padding-right: 40px;
+        padding: 30px 40px;
         background: rgba(14, 36, 51, 0.9);
         color: #fff;
       }
 
-      .atty-details .description-right h2,
-      .atty-details .description-right span {
+      .job-description .description-right h2,
+      .job-description .description-right span {
         margin-bottom: -5px;
         margin-top: 0;
         padding: auto;
         color: #cdba6d;
       }
 
-      .atty-details .description-right p {
+      .job-description .description-right p {
         color: #fff;
         margin-bottom: -5px;
         margin-top: 20px;
         line-height: 25px;
       }
-      @media only screen and (max-width: 768px) {
+
+      @media (max-width: 1110px) {
         .img-bg-2 {
           display: none;
         }
 
-        .atty-details {
-          flex-direction: column;
-          position: relative;
-          top: 20px;
-        }
-
-        .atty-details .atty-2-left {
+        .job-description .profile-img-left {
           background-image: url("assets/images/ex-bg-3.jpg");
           order: 1;
           width: 100%;
@@ -254,7 +245,7 @@
           margin: 0 auto;
         }
 
-        .atty-details .description-right {
+        .job-description .description-right {
           position: relative;
           width: 100%;
           order: 2;
@@ -266,14 +257,15 @@
           background: none;
         }
 
-        .atty-details .description-right h2 {
+        .job-description .description-right h2 {
           font-size: 28px;
         }
 
-        .atty-details .description-right p {
+        .job-description .description-right p {
           font-size: 18px;
           color: #000;
           margin-top: 15px;
+          font-weight: 300;
         }
       }
       /* Team 2 End */
@@ -281,10 +273,6 @@
       /* Team 3 */
       .background .img-bg-3 {
         position: absolute;
-        background: linear-gradient(
-          rgba(8, 8, 62, 0.336),
-          rgba(8, 8, 62, 0.486)
-        );
         background-position: center;
         background-size: cover;
         width: 100%;
@@ -292,70 +280,17 @@
         top: 0;
         left: 0;
       }
-      .atty-details {
-        display: flex;
-        flex-direction: row;
-      }
-      .atty-details .atty-3 {
-        position: relative;
-        top: 28px;
-        order: 2;
-        margin-left: auto;
-        width: 50%;
-      }
 
-      .atty-details .description h2,
-      .atty-details .description span {
-        margin-bottom: -5px;
-        margin-top: 0;
-        padding: auto;
-        color: #cdba6d;
-      }
-
-      .atty-details .description p {
-        color: #fff;
-        margin-bottom: -5px;
-        margin-top: 20px;
-        line-height: 25px;
-      }
-
-      @media only screen and (max-width: 768px) {
+      @media (max-width: 1110px) {
         .img-bg-3 {
           display: none;
-        }
-
-        .atty-details {
-          flex-direction: column;
-          position: relative;
-          top: 20px;
-        }
-
-        .atty-details .atty-3 {
-          background-image: url("assets/images/ex-bg-2.jpeg");
-          order: 1;
-          width: 100%;
-          margin: 0 auto;
-        }
-
-        .atty-details .description h2 {
-          font-size: 28px;
-        }
-
-        .atty-details .description p {
-          font-size: 18px;
-          color: #000;
-          margin-top: 15px;
         }
       }
       /* Team 3 End */
 
-      /* Team 4  */
+      /* Team 4 */
       .background-2 .img-bg-4 {
         position: absolute;
-        background: linear-gradient(
-          rgba(8, 8, 62, 0.336),
-          rgba(8, 8, 62, 0.486)
-        );
         background-position: center;
         background-size: cover;
         width: 100%;
@@ -363,64 +298,16 @@
         top: 0;
         left: 0;
       }
-      .atty-details {
-        display: flex;
-        flex-direction: row;
+
+      .job-description .member {
+        position: relative;
+        top: 30px;
+        float: left;
       }
 
-      .atty-details .description-right h2,
-      .atty-details .description-right span {
-        margin-bottom: -5px;
-        margin-top: 0;
-        padding: auto;
-        color: #cdba6d;
-      }
-
-      .atty-details .description-right p {
-        color: #fff;
-        margin-bottom: -5px;
-        margin-top: 20px;
-        line-height: 25px;
-      }
-      @media only screen and (max-width: 768px) {
+      @media (max-width: 1110px) {
         .img-bg-4 {
           display: none;
-        }
-
-        .atty-details {
-          flex-direction: column;
-          position: relative;
-          top: 20px;
-        }
-
-        .atty-details .atty-2-left {
-          background-image: url("assets/images/ex-bg-3.jpg");
-          order: 1;
-          width: 100%;
-          right: 0;
-          margin: 0 auto;
-        }
-
-        .atty-details .description-right {
-          position: relative;
-          width: 100%;
-          order: 2;
-          left: 0;
-          padding: 10px;
-          margin: 20px auto;
-          top: 10px;
-          border-radius: 0;
-          background: none;
-        }
-
-        .atty-details .description-right h2 {
-          font-size: 28px;
-        }
-
-        .atty-details .description-right p {
-          font-size: 18px;
-          color: #000;
-          margin-top: 15px;
         }
       }
       /* Team 4 End */
@@ -432,7 +319,7 @@
       <div class="container">
         <a class="navbar-brand" href="index.html">
           <img
-            src="assets/images/repol-law-office-logo.png"
+            src="assets/images/repol-law-office-logo.png "
             alt="Repol Law Office Logo"
             loading="lazy"
             width="250"
@@ -538,16 +425,16 @@
             </div>
           </div>
           <div class="col-lg-12">
-            <div class="atty-details">
+            <div class="job-description">
               <img
-                src="assets/images/our-team/ex-attorney-bg-1.png"
-                alt=""
-                class="atty-1 wow fadeIn"
+                src="assets/images/our-team/ex-attorney-bg-2.png"
+                alt="Atty. Mary Jane Y. Repol"
+                class="profile-img wow fadeIn"
                 data-wow-delay="0.2s"
               />
               <div class="description wow fadeInLeft" data-wow-delay="0.2s">
-                <h2>Team 1</h2>
-                <span>Laywer</span>
+                <h2>Atty. Mary Jane Y. Repol</h2>
+                <span>Lawyer And Geodetic Engineer</span>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Consectetur aliquid nesciunt quis ipsum quos repudiandae
@@ -586,19 +473,19 @@
             </div>
           </div>
           <div class="col-lg-12">
-            <div class="atty-details">
+            <div class="job-description">
               <img
-                src="assets/images/our-team/ex-attorney-bg-2.png"
-                alt=""
-                class="atty-2-left wow fadeIn"
+                src="assets/images/our-team/ex-attorney-bg-1.png"
+                alt="Engr. Daniel Yonzon"
+                class="profile-img-left wow fadeIn"
                 data-wow-delay="0.2s"
               />
               <div
                 class="description-right wow fadeInRight"
                 data-wow-delay="0.2s"
               >
-                <h2>Team 2</h2>
-                <span>Laywer</span>
+                <h2>Engr. Daniel Yonzon</h2>
+                <span>Civil Engineer And Real Estate Broker</span>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Consectetur aliquid nesciunt quis ipsum quos repudiandae
@@ -637,16 +524,16 @@
             </div>
           </div>
           <div class="col-lg-12">
-            <div class="atty-details">
+            <div class="job-description">
               <img
-                src="assets/images/our-team/ex-attorney-bg-3.png"
-                alt=""
-                class="atty-3 wow fadeIn"
+                src="assets/images/our-team/ex-attorney-bg-4.png"
+                alt="Sir. Arvin Repol"
+                class="profile-img wow fadeIn"
                 data-wow-delay="0.2s"
               />
               <div class="description wow fadeInLeft" data-wow-delay="0.2s">
-                <h2>Team 3</h2>
-                <span>Laywer</span>
+                <h2>Sir. Arvin Repol</h2>
+                <span>It Supervisor</span>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Consectetur aliquid nesciunt quis ipsum quos repudiandae
@@ -673,7 +560,6 @@
         </div>
       </div>
     </section>
-
     <!-- Team 3 End -->
 
     <!-- Team 4 -->
@@ -686,19 +572,19 @@
             </div>
           </div>
           <div class="col-lg-12">
-            <div class="atty-details">
+            <div class="job-description">
               <img
-                src="assets/images/our-team/ex-attorney-bg-4.png"
-                alt=""
-                class="atty-2-left wow fadeIn"
+                src="assets/images/our-team/team-member-bg.png"
+                alt="Team Member"
+                class="profile-img-left member wow fadeIn"
                 data-wow-delay="0.2s"
               />
               <div
                 class="description-right wow fadeInRight"
                 data-wow-delay="0.2s"
               >
-                <h2>Team 4</h2>
-                <span>Laywer</span>
+                <h2>Team Member</h2>
+                <span>Position</span>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Consectetur aliquid nesciunt quis ipsum quos repudiandae

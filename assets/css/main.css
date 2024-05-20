@@ -488,7 +488,7 @@ img {
 .section {
   padding: 4em 0;
   position: relative;
-  /* background-color: red; */
+
 }
 
 @media (max-width: 768px) {

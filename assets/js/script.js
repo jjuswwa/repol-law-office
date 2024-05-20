@@ -14,9 +14,9 @@ const navbarLogo = document.getElementById("navbarLogo");
 
 window.addEventListener("scroll", function () {
   if (window.scrollY > 50) {
-    navbarLogo.src = "assets/images/repol-law-office-scroll.png";
+    navbarLogo.srcset = "assets/images/repol-law-office-scroll.png 500w";
   } else {
-    navbarLogo.src = "assets/images/repol-law-office-logo.png";
+    navbarLogo.srcset = "assets/images/repol-law-office-logo.png 250w";
   }
 });
 
@@ -27,20 +27,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
   navLinks.forEach(function (link) {
     link.addEventListener("click", function (event) {
+      // Check if the clicked link is the "Pages" dropdown toggle
+      if (!this.classList.contains("dropdown-toggle")) {
+        // Close the navigation menu after a link is clicked, for mobile
+        if (
+          navbarToggle &&
+          window.innerWidth <= 991.98 &&
+          !navbarToggle.classList.contains("collapsed")
+        ) {
+          navbarToggle.click(); // Trigger click event on navbar toggle button to close the navbar
+        }
+      }
+
       navLinks.forEach(function (otherLink) {
         otherLink.classList.remove("active");
       });
       this.classList.add("active");
-
-      // Close the navigation menu after a link is clicked ps. This is for mobile
-      if (
-        navbarToggle &&
-        window.innerWidth <= 991.98 &&
-        !isWithinDropdown(event.target) &&
-        !navbarToggle.classList.contains("collapsed")
-      ) {
-        navbarToggle.click();
-      }
     });
   });
 
@@ -64,7 +66,14 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-
+// Scroll to the section on previous URL visit
+var fragment = window.location.hash.substr(1);
+if (fragment) {
+  var targetSection = document.getElementById(fragment);
+  if (targetSection) {
+    targetSection.scrollIntoView({ behavior: "smooth" });
+  }
+}
 
 // Array of words to be typed
 // const wordsToType = ["Solution.", "Solution.", "Solution.", "Solution."];
