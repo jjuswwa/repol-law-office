@@ -488,7 +488,6 @@ img {
 .section {
   padding: 4em 0;
   position: relative;
-
 }
 
 @media (max-width: 768px) {
@@ -1426,11 +1425,9 @@ p {
     transform: translateX(0);
   }
   80% {
-
     transform: translateX(0);
   }
   100% {
-  
     transform: translateX(0);
   }
 }
@@ -1641,7 +1638,7 @@ p {
 
 /** New Page **/
 .hero-wrap {
-  background: linear-gradient(rgba(0, 46, 87, 0.432), rgba(0, 47, 87, 0.432)),
+  background: linear-gradient(rgba(2, 21, 37, 0.432), rgba(0, 47, 87, 0.432)),
     url("../images/ex-bg-1.jpg");
   background-position: center;
   background-size: cover;
