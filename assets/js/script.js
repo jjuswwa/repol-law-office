@@ -27,15 +27,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   navLinks.forEach(function (link) {
     link.addEventListener("click", function (event) {
-      // Check if the clicked link is the "Pages" dropdown toggle
       if (!this.classList.contains("dropdown-toggle")) {
-        // Close the navigation menu after a link is clicked, for mobile
         if (
           navbarToggle &&
           window.innerWidth <= 991.98 &&
           !navbarToggle.classList.contains("collapsed")
         ) {
-          navbarToggle.click(); // Trigger click event on navbar toggle button to close the navbar
+          navbarToggle.click();
         }
       }
 
@@ -76,7 +74,7 @@ if (fragment) {
 }
 
 // Array of words to be typed
-// const wordsToType = ["Solution.", "Solution.", "Solution.", "Solution."];
+// const wordsToType = ["Solution.", "Freedom.", "Fight.", "Case."];
 // let currentWordIndex = 0;
 
 // Function to type the text
@@ -111,6 +109,9 @@ if (fragment) {
 //   }
 // }
 
+// // Start typing effect with the first word
+// typeWriter(wordsToType[currentWordIndex], 0, 300);
+
 // //Modal
 // document.addEventListener("DOMContentLoaded", function () {
 //   const profileModal = document.querySelector(".profileModalTrigger");
@@ -125,9 +126,6 @@ if (fragment) {
 //     backgroundModal.style.display = "none";
 //   });
 // });
-
-// Start typing effect with the first word
-// typeWriter(wordsToType[currentWordIndex], 0, 300);
 
 // Hover image in section 2
 // function changeImage() {

@@ -719,38 +719,10 @@ img {
   font-size: 15px;
 }
 
-.services .btn-custom {
-  position: absolute;
-  bottom: -35px;
-  left: 0;
-  right: 0;
-  width: 130px;
-  height: 50px;
-  border-radius: 7px;
-  background: var(--button);
-  font-family: var(--font-description);
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 14px;
-  letter-spacing: 2px;
-  margin: 0 auto;
-  opacity: 0;
-  transition: all 0.3s ease;
-}
-
-.services .btn-custom span {
-  color: #fff;
-}
-
-.services:hover .btn-custom {
-  opacity: 1;
-  bottom: -25px;
-  color: #fff;
-}
 /** Practice Service End **/
 
-/** Land Surveying Services **/
-.land-surveying {
+/** Our Services **/
+.our-service {
   display: flex;
   flex-direction: column;
   margin-bottom: 120px;
@@ -764,40 +736,40 @@ img {
 }
 
 @media (max-width: 767.98px) {
-  .land-surveying {
+  .our-service {
     border-left: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   }
 }
 
-.land-surveying img {
+.our-service img {
   height: 100%;
 }
 
 @media (max-width: 991.98px) {
-  .land-surveying img {
+  .our-service img {
     width: 100% !important;
     height: 100% !important;
   }
 }
 
-.land-surveying .hover-image {
+.our-service .hover-image {
   position: absolute;
   top: 0;
   left: 0;
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   opacity: 0;
   z-index: 0;
   transition: opacity 0.3s ease;
 }
 
-.land-surveying:hover .hover-image {
+.our-service:hover .hover-image {
   opacity: 1;
 }
 
-.land-surveying .image-overlay {
+.our-service .image-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -813,11 +785,11 @@ img {
   box-shadow: rgba(0, 0, 0, 0.479);
 }
 
-.land-surveying:hover .image-overlay {
+.our-service:hover .image-overlay {
   opacity: 1;
 }
 
-.land-surveying .icon {
+.our-service .icon {
   width: 100px;
   height: 100px;
   margin: 0 auto;
@@ -826,44 +798,60 @@ img {
   border-radius: 50%;
 }
 
-.land-surveying .icon img {
+.our-service .icon img {
   height: 70%;
   color: var(--primary);
   transition: all 0.3s ease;
 }
 
-.land-surveying h3 {
+.our-service h3 {
   font-size: 20px;
 }
 
-.land-surveying,
+.lour-service,
 h3,
 p {
   color: #000000;
 }
 
-.land-surveying:hover .icon img,
-.land-surveying:focus .icon img {
+.our-service:hover .icon img,
+.our-service:focus .icon img {
   filter: brightness(0) invert(1);
   height: 70%;
   z-index: 999;
 }
 
-.land-surveying:hover h3,
-.land-surveying:focus h3 {
+.our-service:hover h3,
+.our-service:focus h3 {
   color: var(--light);
   z-index: 999;
 }
 
-.land-surveying:hover p,
-.land-surveying:focus p {
+.our-service:hover p,
+.our-service:focus p {
   color: var(--light);
   z-index: 999;
 }
 
-.land-surveying p {
+.our-service p {
   flex-grow: 1;
 }
+
+.read-more-btn {
+  color: var(--dark);
+  font-weight: 600;
+}
+
+.our-service:hover .read-more-btn,
+.our-service:focus .read-more-btn {
+  color: var(--light);
+  z-index: 999;
+}
+
+.our-service .read-more-btn:hover {
+  color: var(--primary);
+}
+
 /**  Land Surveying Services End **/
 
 /** Our Team **/
@@ -1511,11 +1499,41 @@ p {
   font-size: 1.5rem;
 }
 
-.footer .footer-widget .list-unstyled li a {
+.footer .footer-widget .list-unstyled ul {
+  padding: 0;
+  list-style: none;
+}
+
+.footer .footer-widget .list-unstyled ul li,
+.footer .footer-widget .list-unstyled ul li > a {
+  display: table;
+  line-height: 1.5;
+  margin-bottom: 5px;
   color: var(--light);
 }
 
-.footer .footer-widget .list-unstyled li a:hover {
+.footer .footer-widget .list-unstyled ul li .fas,
+.footer .footer-widget .list-unstyled ul li .text {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.footer .footer-widget .list-unstyled ul li .fas {
+  width: 40px;
+  font-size: 18px;
+  padding-top: 2px;
+}
+
+.footer .footer-widget .list-unstyled ul li:hover i,
+.footer .footer-widget .list-unstyled ul li:hover span {
+  color: var(--primary);
+}
+
+.footer .footer-widget .list-social li a {
+  color: var(--light);
+}
+
+.footer .footer-widget .list-social li a:hover {
   color: var(--primary);
 }
 
@@ -1532,39 +1550,29 @@ p {
     margin-left: 0 !important;
   }
 }
-
-.footer .footer-widget .text .icon {
-  margin-right: 10px;
-}
-.footer .footer-widget .information {
-  margin-bottom: 0;
-}
-
 .footer .footer-widget .information ul {
   padding: 0;
-  margin: 0;
-}
-
-.footer .footer-widget .information ul li {
   list-style: none;
-  margin-bottom: 10px;
 }
 
-.footer .footer-widget .information ul li i {
-  padding-right: 10px;
-  padding-bottom: 1px;
-  margin-right: 1px;
-  margin-bottom: 1px;
+.footer .footer-widget .information ul li,
+.footer .footer-widget .information ul li > a {
+  display: table;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.footer .footer-widget .information ul li .fas,
+.footer .footer-widget .information ul li .text {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.footer .footer-widget .information ul li .fas {
+  width: 40px;
+  font-size: 18px;
+  padding-top: 2px;
   color: var(--light);
-}
-
-.footer .footer-widget .information ul li .text,
-.footer .footer-widget .information ul li .hover {
-  color: #fff;
-}
-
-.footer .footer-widget .information ul li .hover:hover {
-  color: var(--primary);
 }
 
 .footer .footer-widget .btn-primary {
