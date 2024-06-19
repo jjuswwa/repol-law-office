@@ -375,6 +375,19 @@ img {
   font-family: var(--font-description);
 }
 
+@media (max-width: 1200px) {
+  #hero .container {
+    position: relative;
+    top: 400px !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #hero .container {
+    position: relative;
+    top: 200px !important;
+  }
+}
 @media screen and (max-width: 600px) {
   #hero h1 {
     font-size: 36px;
