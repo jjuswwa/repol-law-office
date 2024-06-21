@@ -356,6 +356,11 @@ img {
   background-size: cover;
 }
 
+#hero .container {
+  position: relative;
+  top: 200px;
+}
+
 #hero h6 {
   font-weight: 800;
 }
@@ -369,17 +374,10 @@ img {
   width: 45%;
   font-family: var(--font-description);
 }
-@media (max-height: 1200px) {
+@media (min-height: 1200px) {
   #hero .container {
     position: relative;
     top: 350px;
-  }
-}
-
-@media (max-height: 996.98px) {
-  #hero .container {
-    position: relative;
-    top: 200px;
   }
 }
 
