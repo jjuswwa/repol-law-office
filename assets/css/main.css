@@ -358,7 +358,7 @@ img {
 
 #hero .container {
   position: relative;
-  top: 200px;
+  top: 200px !important;
 }
 
 #hero h6 {
@@ -377,7 +377,7 @@ img {
 @media (max-height: 1200px) {
   #hero .container {
     position: relative;
-    top: 400px !important;
+    top: 400px;
   }
 }
 
