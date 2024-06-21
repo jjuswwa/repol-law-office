@@ -811,10 +811,9 @@ form button:hover {
   padding-left: 25px;
   margin-right: auto;
   margin-left: auto;
-
 }
 
-/* @media (min-width: 576px) {
+@media (min-width: 576px) {
   .footer-container {
     max-width: 540px;
   }
@@ -836,7 +835,7 @@ form button:hover {
   .footer-container {
     max-width: 1240px;
   }
-} */
+}
 
 .footer-section {
   padding: 2em 0;
@@ -949,7 +948,11 @@ form button:hover {
     margin-left: -18px !important;
   }
 }
-
+@media (max-width: 996.98px) {
+  .footer-brand img {
+    width: 55% !important;
+  }
+}
 @media (max-width: 600px) {
   .footer-brand img {
     width: 75% !important;
