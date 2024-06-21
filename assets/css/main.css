@@ -358,7 +358,7 @@ img {
 
 #hero .container {
   position: relative;
-  top: 30% !important;
+  top: 200px;
 }
 
 #hero h6 {
@@ -374,7 +374,6 @@ img {
   width: 45%;
   font-family: var(--font-description);
 }
-
 @media (max-width: 1200px) {
   #hero .container {
     position: relative;
@@ -382,12 +381,6 @@ img {
   }
 }
 
-@media (max-width: 991.98px) {
-  #hero .container {
-    position: relative;
-    top: 200px !important;
-  }
-}
 @media screen and (max-width: 600px) {
   #hero h1 {
     font-size: 36px;
