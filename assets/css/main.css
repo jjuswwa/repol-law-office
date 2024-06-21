@@ -374,7 +374,7 @@ img {
   width: 45%;
   font-family: var(--font-description);
 }
-@media (min-height: 1200px) {
+@media (min-height: 900px) {
   #hero .container {
     position: relative;
     top: 350px;
