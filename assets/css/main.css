@@ -841,11 +841,6 @@ form button:hover {
   padding: 2em 0;
   position: relative;
 }
-.footer-brand img {
-  position: relative;
-  right: -20px;
-  top: -25px;
-}
 
 .footer .logo {
   font-size: 34px !important;
@@ -919,9 +914,16 @@ form button:hover {
   margin-left: 1rem;
 }
 
+.footer-brand img {
+  position: relative;
+  right: -20px;
+  top: -25px;
+  width: 25%;
+}
+
 @media (max-width: 1200px) {
   .footer-brand img {
-    width: 140vh !important;
+    width: 25% !important;
   }
 
   .footer-widget {
@@ -948,6 +950,7 @@ form button:hover {
     margin-left: -18px !important;
   }
 }
+
 @media (max-width: 996.98px) {
   .footer-brand img {
     width: 55% !important;
