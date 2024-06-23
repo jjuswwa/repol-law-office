@@ -660,6 +660,82 @@ img {
 
 /** ===== OUR SERVICES END ===== **/
 
+/** ===== CLIENT ===== **/
+.slider {
+  height: 250px;
+  margin: auto;
+  position: relative;
+  width: 90%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
+  width: calc(250px * 18);
+  animation: scroll 40s linear infinite;
+}
+
+.slider-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-250px * 12));
+  }
+}
+
+.slide {
+  height: 200px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  perspective: 100px;
+}
+
+.slide img {
+  width: 150px;
+  transition: transform 1s;
+}
+
+.slider img:hover {
+  transform: translateZ(20px);
+}
+
+.slider::before,
+.slider::after {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 15%;
+  z-index: 2;
+}
+
+.slider:before {
+  left: 0;
+  top: 0;
+}
+
+.slider:after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+/** ===== CLIENT END ===== **/
+
 /** ===== CONTACT   ===== **/
 .description p {
   font-size: 14px;
@@ -1063,3 +1139,179 @@ form button:hover {
 
 /** ===== CONSULTATION FORM END ===== **/
 /** ===== FOOTER END ===== **/
+
+/** ===== LAND SURVEYING ===== **/
+.hero-wrap {
+  background: linear-gradient(rgba(2, 21, 37, 0.432), rgba(0, 47, 87, 0.432)),
+    url("../images/ex-bg-1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+@media (max-width: 1199.98px) {
+  .hero-wrap {
+    background-position: center center !important;
+  }
+}
+
+.hero-wrap.hero-wrap-2 {
+  height: 645px;
+}
+
+.hero-wrap.hero-wrap-2 .overlay {
+  opacity: 0.3;
+}
+
+.hero-wrap.hero-wrap-2 .slider-text {
+  height: 700px;
+}
+
+.slider-text .breadcrumbs {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  z-index: 99;
+}
+
+.slider-text .breadcrumbs span {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.slider-text .breadcrumbs span i {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.slider-text .breadcrumbs span a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.slider-text .breadcrumbs span a:hover,
+.slider-text .breadcrumbs span a:focus {
+  color: var(--primary);
+}
+
+.slider-text .breadcrumbs span a:hover i,
+.slider-text .breadcrumbs span a:focus i {
+  color: var(--primary);
+}
+
+.slider-text .bread {
+  font-weight: 700 !important;
+  font-size: 3.8rem !important;
+}
+
+.land-surveying {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 120px;
+  padding: 20px;
+  border: 1px solid rgba(248, 249, 250, 1);
+  background-color: rgba(248, 249, 250, 1);
+  overflow: hidden;
+  position: relative;
+  top: -40px;
+  height: 100%;
+}
+
+@media (max-width: 767.98px) {
+  .land-surveying {
+    border-left: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  }
+}
+
+.land-surveying img {
+  height: 100%;
+}
+
+@media (max-width: 991.98px) {
+  .land-surveying img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+.land-surveying .hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  opacity: 0;
+  z-index: 0;
+  transition: opacity 0.3s ease;
+}
+
+.land-surveying:hover .hover-image {
+  opacity: 1;
+}
+
+.land-surveying .image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.664);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.479);
+}
+
+.land-surveying:hover .image-overlay {
+  opacity: 1;
+}
+
+.land-surveying .icon {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+}
+
+.land-surveying .icon img {
+  height: 70%;
+  color: var(--primary);
+  transition: all 0.3s ease;
+}
+
+.land-surveying h3 {
+  font-size: 20px;
+}
+
+.land-surveying,
+h3,
+p {
+  color: #000000;
+}
+
+.land-surveying:hover .icon img,
+.land-surveying:focus .icon img {
+  filter: brightness(0) invert(1);
+  height: 70%;
+  z-index: 999;
+}
+
+.land-surveying:hover h3,
+.land-surveying:focus h3 {
+  color: var(--light);
+  z-index: 999;
+}
+
+.land-surveying:hover p,
+.land-surveying:focus p {
+  color: var(--light);
+  z-index: 999;
+}
+
+.land-surveying p {
+  flex-grow: 1;
+}
+/** ===== LAND SURVEYING END ===== **/
