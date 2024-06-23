@@ -1154,6 +1154,7 @@ form button:hover {
   }
 }
 
+
 .hero-wrap.hero-wrap-2 {
   height: 645px;
 }
@@ -1198,6 +1199,12 @@ form button:hover {
 .slider-text .bread {
   font-weight: 700 !important;
   font-size: 3.8rem !important;
+}
+
+@media (max-width: 768px) {
+  .slider-text .bread {
+    font-size: 3rem !important;
+  }
 }
 
 .land-surveying {
@@ -1287,7 +1294,6 @@ form button:hover {
 }
 
 .land-surveying,
-h3,
 p {
   color: #000000;
 }
