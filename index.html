@@ -101,9 +101,7 @@
               <a class="nav-item nav-link mx-2" href="#ourService"
                 >Legal Services</a
               >
-              <a
-                class="nav-item nav-link mx-2"
-                href="land-surveying.html"
+              <a class="nav-item nav-link mx-2" href="land-surveying.html"
                 >Land Surveying</a
               >
 
@@ -761,7 +759,11 @@
                       class="item"
                       autocomplete="off"
                       style="height: 20px; width: 200px"
-                      oninput="this.value = this.value.replace(/[^0-9]/g, ''); if(this.value.length > 12) this.value = this.value.slice(0, 12);"
+                      oninput="if (/^[1-9]/.test(this.value)) { 
+                        this.value = '09' + this.value; 
+                        } this.value = this.value.replace(/[^0-9]/g, ''); 
+                        if(this.value.length > 11) 
+                        this.value = this.value.slice(0, 11);"
                       maxlength="12"
                       required
                     />
